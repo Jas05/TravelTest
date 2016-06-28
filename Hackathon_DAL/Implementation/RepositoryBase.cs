@@ -47,12 +47,12 @@ namespace Travel_DAL.Implementation
 
         public void Delete(TEntity entity)
         {
-            throw new NotImplementedException();
+            dbSet.Remove(entity);
         }
 
         public void Add(TEntity entity)
         {
-            throw new NotImplementedException();
+            dbSet.Add(entity);
         }
 
         public TEntity GetByID(int id)
