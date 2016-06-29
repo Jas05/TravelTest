@@ -54,12 +54,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Hackathon_DAL\Travel_DAL.csproj">
-      <Project>{3c985a02-7b9c-4a05-b48f-92861d9216c8}</Project>
-      <Name>Travel_DAL</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>

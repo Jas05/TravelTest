@@ -51,7 +51,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="Interfaces\IJourney.cs" />
     <Compile Include="Implementation\Journey.cs" />
     <Compile Include="Implementation\RepositoryBase.cs" />
