@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3C985A02-7B9C-4A05-B48F-92861D9216C8}</ProjectGuid>
+    <ProjectGuid>{3B614A53-FD95-4815-880F-06C6803BDD10}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Travel_DAL</RootNamespace>
-    <AssemblyName>Travel_DAL</AssemblyName>
+    <RootNamespace>Travel_BL</RootNamespace>
+    <AssemblyName>Travel_BL</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -41,8 +41,6 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Runtime.Serialization" />
-    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -51,59 +49,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
-    <Compile Include="Interfaces\IJourney.cs" />
-    <Compile Include="Implementation\Journey.cs" />
-    <Compile Include="Implementation\RepositoryBase.cs" />
-    <Compile Include="Interfaces\IRepository.cs" />
-    <Compile Include="Interfaces\IUnitOfWork.cs" />
-    <Compile Include="JourneyType.cs">
-      <DependentUpon>Travel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Travel.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Travel.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Travel.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Travel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Travel.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Travel.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="ITravelContext.cs" />
+    <Compile Include="Implementation\JourneyService.cs" />
+    <Compile Include="Interfaces\IJourneyService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Hackathon_DAL\Travel_DAL.csproj">
+      <Project>{3c985a02-7b9c-4a05-b48f-92861d9216c8}</Project>
+      <Name>Travel_DAL</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-    <EntityDeploy Include="Travel.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Travel.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <None Include="Travel.edmx.diagram">
-      <DependentUpon>Travel.edmx</DependentUpon>
-    </None>
-  </ItemGroup>
-  <ItemGroup />
-  <ItemGroup>
-    <Content Include="Travel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Travel.edmx</DependentUpon>
-      <LastGenOutput>Travel.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Travel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Travel.edmx</DependentUpon>
-      <LastGenOutput>Travel.cs</LastGenOutput>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

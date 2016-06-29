@@ -14,7 +14,7 @@ namespace Travel_DAL.Implementation
         private TravelEntities travelContext;
         private DbSet<TEntity> dbSet;
 
-        public DbSet<TEntity> MyProperty
+        public DbSet<TEntity> DbSet
         {
             get { return dbSet; }
         }
@@ -35,29 +35,33 @@ namespace Travel_DAL.Implementation
             return dbSet.FirstOrDefault(predicate);
         }
 
-        public TEntity GetSingle(TEntity entity)
+        public TEntity Find (Expression<Func<TEntity, bool>> predicate)
         {
-            throw new NotImplementedException();
+            return dbSet.Find(predicate);
         }
 
-        public void Update(TEntity entity)
+        public void Update(TEntity entity, int id)
         {
-            throw new NotImplementedException();
+            var existingEntity = dbSet.Find(id);
+            if(existingEntity == null)
+            {
+                return;
+            }
+
+            travelContext.Entry(existingEntity).CurrentValues.SetValues(entity);
+            travelContext.SaveChanges();
         }
 
         public void Delete(TEntity entity)
         {
             dbSet.Remove(entity);
+            travelContext.SaveChanges();
         }
 
         public void Add(TEntity entity)
         {
             dbSet.Add(entity);
-        }
-
-        public TEntity GetByID(int id)
-        {
-            throw new NotImplementedException();
+            travelContext.SaveChanges();
         }
     }
 }
