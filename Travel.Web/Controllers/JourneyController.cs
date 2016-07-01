@@ -22,6 +22,7 @@ namespace Travel.Web.Controllers
         public ActionResult Index()
         {
             var viewModel = new JourneyViewModel();
+            viewModel.journeyTypeList = new List<JourneyModel>();
             var journeyTypes = journeyService.GetAllJourneyTypes();
             foreach (var journeyType in journeyTypes)
             {

@@ -1,4 +1,4 @@
-﻿@model Travel.DAL.JourneyType
+﻿@model Travel.Web.ViewModels.JourneyViewModel
 
 @{
     ViewBag.Title = "Index";
@@ -7,5 +7,30 @@
 
 <h2>Index</h2>
 
-
+<table>
+    <thead>
+        <tr>
+            <td>
+                ID
+            </td>
+            <td>
+                Name
+            </td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var journeyType in Model.journeyTypeList)
+        {
+            <tr>
+                <td>
+                    @journeyType.Id
+                </td>
+                <td>
+                    @journeyType.Name
+                </td>
+            </tr>
+        }
+    </tbody>
+   
+</table>
 
