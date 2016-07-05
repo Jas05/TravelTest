@@ -7,7 +7,7 @@
 
 <h2>Index</h2>
 
-<table>
+<table class="table table-condensed table-hover table-striped">
     <thead>
         <tr>
             <td>
@@ -16,10 +16,13 @@
             <td>
                 Name
             </td>
+            <td>
+                Actions
+            </td>
         </tr>
     </thead>
     <tbody>
-        @foreach(var journeyType in Model.journeyTypeList)
+        @foreach (var journeyType in Model.journeyTypeList)
         {
             <tr>
                 <td>
@@ -28,9 +31,22 @@
                 <td>
                     @journeyType.Name
                 </td>
+                <td>
+                    <a id=@("deleteJourneType"+journeyType.Id) onclick="deleteJourneyType(@journeyType.Id)">Delete</a>
+                </td>
             </tr>
         }
     </tbody>
-   
+
 </table>
 
+<h2>Create New Journey Type</h2>
+
+<label for="newJourneyType" id="">Journey Type</label>
+<input type="text" id="newJourneyType" />
+<br />
+<button id="createNewJourneyType" type="submit">Create</button>
+
+@section scripts{
+    <script src="~/Scripts/App/journey.js" type="text/javascript"></script>
+}

@@ -12,7 +12,7 @@ namespace Travel.DAL.Interfaces
         IEnumerable<TEntity> GetAll();
         TEntity GetByID(Expression<Func<TEntity, bool>> predicate);
 
-        TEntity Find(Expression<Func<TEntity, bool>> predicate);
+        TEntity Find(int id);
 
         void Update(TEntity entity, int id);
 

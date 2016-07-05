@@ -23,5 +23,24 @@ namespace Travel.Core.Implementation
         {
             return journey.GetJourneyTypes();
         }
+
+        public List<JourneyType> CreateNewJourneyType(string newJourneyType)
+        {
+            var journeyType = new JourneyType();
+            journeyType.Name = newJourneyType;
+            journey.Add(journeyType);
+
+            // return new list of journey types
+            return journey.GetJourneyTypes();
+        }
+
+        public List<JourneyType> DeleteJourneyType(int id)
+        {
+            var entity = journey.Find(id);
+            journey.Delete(entity);
+
+            // return new list of journey types
+            return journey.GetJourneyTypes();
+        }
     }
 }
