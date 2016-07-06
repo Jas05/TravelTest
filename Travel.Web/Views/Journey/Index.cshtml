@@ -32,6 +32,9 @@
                     @journeyType.Name
                 </td>
                 <td>
+                    @*<a id=@("editJourneyType"+journeyType.Id) href="/Journey/Edit">Edit</a>&nbsp;*@
+                    <a href="@Url.Action("Edit",new  {@id=journeyType.Id, @JourneyTypeName=journeyType.Name })">Edit</a>
+
                     <a id=@("deleteJourneType"+journeyType.Id) onclick="deleteJourneyType(@journeyType.Id)">Delete</a>
                 </td>
             </tr>

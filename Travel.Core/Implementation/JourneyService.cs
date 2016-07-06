@@ -42,5 +42,16 @@ namespace Travel.Core.Implementation
             // return new list of journey types
             return journey.GetJourneyTypes();
         }
+
+        public void EditJourneyType(int id, string journeyTypeName)
+        {
+            var journeyType = new JourneyType()
+            {
+                Id = id,
+                Name = journeyTypeName
+            };
+
+            journey.Update(journeyType, id);
+        }
     }
 }

@@ -29,7 +29,7 @@ namespace Travel.Web.Controllers
             return View(viewModel);
         }
 
-        public ActionResult Create(string newJourneyType)
+        public bool Create(string newJourneyType)
         {
             var viewModel = new JourneyViewModel();
             viewModel.journeyTypeList = new List<JourneyModel>();
@@ -41,18 +41,47 @@ namespace Travel.Web.Controllers
                 PopulateJourneyTypeList(viewModel, model);
             }
 
-            return View(viewModel);
+            return true;
+
+            // RedirectToAction("Index", "Journey");
         }
 
-        public ActionResult Delete(int id)
+        public bool Delete(int id)
         {
             var viewModel = new JourneyViewModel();
             viewModel.journeyTypeList = new List<JourneyModel>();
             var model = journeyService.DeleteJourneyType(id);
 
             PopulateJourneyTypeList(viewModel, model);
+            return true;
+        }
+
+        public ActionResult Edit(int id, string journeyTypeName)
+        {
+            var viewModel = new JourneyViewModel();
+            viewModel.journeyTypeList = new List<JourneyModel>();
+            viewModel.JourneyTypeId = id;
+            viewModel.JourneyType = journeyTypeName.Trim();
             return View(viewModel);
         }
+
+        public ActionResult EditJourneyType(int id, string journeyTypeName)
+        {
+            var journeyModel = new JourneyModel()
+            {
+                Id = id,
+                Name = journeyTypeName.Trim()
+            };
+            journeyService.EditJourneyType(id, journeyTypeName);
+
+            var viewModel = new JourneyViewModel();
+            viewModel.journeyTypeList = new List<JourneyModel>();
+            var journeyTypes = journeyService.GetAllJourneyTypes();
+            PopulateJourneyTypeList(viewModel, journeyTypes);
+
+
+            return View("Index", viewModel);
+        } 
 
         private static void PopulateJourneyTypeList(JourneyViewModel viewModel, List<DAL.JourneyType> model)
         {
@@ -65,5 +94,7 @@ namespace Travel.Web.Controllers
                 });
             }
         }
+
+
     }
 }

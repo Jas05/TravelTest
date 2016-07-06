@@ -13,5 +13,9 @@ namespace Travel.Web.ViewModels
 
         [Required]
         public string NewJourneyType { get; set; }
+
+        public int JourneyTypeId { get; set; }
+
+        public string JourneyType { get; set; }
     }
 }
