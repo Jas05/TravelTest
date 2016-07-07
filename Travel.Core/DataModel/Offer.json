@@ -1,19 +1,39 @@
 ﻿{
   "Offer": [
     {
-      "ID": "1"
-   
+      "ID": "1",
+      "Name": "Museum 2 for 1 offer",
+      "Description": "This offer also contains a walking tour of the city",
+      "Price GBP": "£ 40.00",
+      "OfferURL": "www.google.com"
     },
     {
-      "ID": "2"
-     
+      "ID": "2",
+      "Name": "Top City Attractions Pass",
+      "Description": "This attraction pass allows you an unlimited access to all the city attractions. Was £48 earlier.",
+      "Price GBP": "£ 34.99",
+      "OfferURL": "www.google.com"
     },
     {
-      "ID": "3"
-     
+      "ID": "3",
+      "Name": "City Travel Pass",
+      "Description": "This pass can be used on Metros,Buses,Trams and Ferries",
+      "Price GBP": "£ 24.90",
+      "OfferURL": "www.google.com"
     },
-        {
-      "ID": "4"
+    {
+      "ID": "4",
+      "Name": "Sea life, Madam Tussauds Offer",
+      "Description": "This combo offer can be used to visit Sea Life and Madam Tussauds",
+      "Price GBP": "£ 23.99",
+      "OfferURL": "www.google.com"
+    },
+    {
+      "ID": "5",
+      "Name": "River Cruise",
+      "Description": "River Cruise",
+      "Price GBP": "£ 48.00",
+      "OfferURL": "www.google.com"
     }
   ]
 }

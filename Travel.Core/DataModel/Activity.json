@@ -13,28 +13,55 @@
       "ID": "2",
 	  "DestinationID": "1",
 	  "Name": "Museum Trip",
-	  "Description": "Museum Trip",
+	  "Description": "Museum Trip 2 for 1 offers",
 	  "Price GBP" : "£ 14.29",
 	  "BookingURL" : "www.google.com",
-	  "ActivityType" : "Sightseeing"
+	  "ActivityType" : "Museum"
     },
     {
       "ID": "3",
 	  "DestinationID": "1",
       "Name": "Horse Riding",
-	  "Description": "Horse Riding",
+	  "Description": "Horse riding and horse riding lessons",
 	  "Price GBP" : "£ 35.49",
 	  "BookingURL" : "www.google.com",
 	  "ActivityType" : "Sport"
     },
-        {
+    {
+      "ID": "4",
+      "DestinationID": "1",
+      "Name": "Boating",
+      "Description": "Boating",
+      "Price GBP": "£ 10.19",
+      "BookingURL": "www.google.com",
+      "ActivityType": "Boating"
+    },
+    {
+      "ID": "4",
+      "DestinationID": "1",
+      "Name": "Old City tour",
+      "Description": "Old City tour",
+      "Price GBP": "£ 10.19",
+      "BookingURL": "www.google.com",
+      "ActivityType": "Sightseeing"
+    },
+    {
+      "ID": "4",
+      "DestinationID": "1",
+      "Name": "Walking City Tour",
+      "Description": "Walking City Tour",
+      "Price GBP": "£ 10.19",
+      "BookingURL": "www.google.com",
+      "ActivityType": "Walking Tour"
+    },
+     {
       "ID": "4",
 	  "DestinationID": "1",
-      "Name": "Old City tour",
-	  "Description": "Old City tour",
+      "Name": "Hiking",
+	  "Description": " hillwalking",
 	  "Price GBP" : "£ 10.19",
 	  "BookingURL" : "www.google.com",
-	  "ActivityType" : "Sightseeing"
+	  "ActivityType" : "Hiking"
     }
   ]
 }
