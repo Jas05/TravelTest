@@ -160,6 +160,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ItineraryController.cs" />
     <Compile Include="Controllers\JourneyController.cs" />
+    <Compile Include="Controllers\WeatherController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -219,6 +220,7 @@
     <Content Include="Views\Details\Contact.cshtml" />
     <Content Include="Views\Contact\Contact.cshtml" />
     <Content Include="Views\Contact\Index.cshtml" />
+    <Content Include="Views\Weather\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
