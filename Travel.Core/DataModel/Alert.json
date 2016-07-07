@@ -5,28 +5,28 @@
 	  "BookingID: "",
 	  "ResortID: "",
 	  "AlertText" : "",
-	  "AlertType" : ""
+	  "AlertType" : "User"
     },
     {
       "ID": "2",
 	  "BookingID: "",
 	  "ResortID: "",
 	  "AlertText" : "",
-	  "AlertType" : ""
+	  "AlertType" : "Resort"
     },
     {
       "ID": "3",
 	  "BookingID: "",
 	  "ResortID: "",
 	  "AlertText" : "",
-	  "AlertType" : ""
+	  "AlertType" : "All"
     },
      {
       "ID": "4",
 	  "BookingID: "",
 	  "ResortID: "",
 	  "AlertText" : "",
-	  "AlertType" : ""
+	  "AlertType" : "User"
     }
   ]
 }
