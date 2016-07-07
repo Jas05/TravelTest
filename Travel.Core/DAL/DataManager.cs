@@ -36,17 +36,17 @@ namespace Travel.Core.DAL
             return activitiesList.Activities.ToList();
         }
 
-        public List<Destination> GetDestinationDetails(string destinationID)
+        public Destination GetDestinationDetails(string destinationID)
         {
 
             var destinationList = DeserializeJson<DestinationList>(Path.Combine(executableLocation + @"bin\DataModel\Destination.json"));
-            return destinationList.Destinations.Where(x => x.ID == destinationID).ToList();
+            return destinationList.Destinations.FirstOrDefault(x => x.ID == destinationID);
         }
 
-        public List<Destination> GetFlightDetails(string destinationID)
+        public Flight GetFlightDetails(string flightId)
         {
-            var destinationList = DeserializeJson<DestinationList>(Path.Combine(executableLocation + @"bin\DataModel\Flights.json"));
-            return destinationList.Destinations.Where(x => x.ID == destinationID).ToList();
+            var destinationList = DeserializeJson<FlightList>(Path.Combine(executableLocation + @"bin\DataModel\Flights.json"));
+            return destinationList.Flights.FirstOrDefault(x => x.ID == flightId);
         }
 
 
