@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using Travel.
 
 namespace Travel.Web.Controllers
 {
@@ -17,7 +16,7 @@ namespace Travel.Web.Controllers
 
         public bool ValidateUser(string bookingRef, string surname)
         {
-            if(bookingRef == "1234" && surname == "lch")
+            if(bookingRef == "123456" && surname == "spectrum")
             {
                 return true;
             }
