@@ -19,7 +19,7 @@ namespace Travel.Web.Controllers
             var destinationDetails = datamanager.GetDestinationDetails(bookingDetails.DestinationId.ToString());
             var flights = datamanager.GetFlightDetails(bookingDetails.DestinationId.ToString());
 
-            // viewModel.ArrivalName = destinationDetails.
+            viewModel.ArrivalName = destinationDetails.Region + " " + destinationDetails.Country;
             return View();
         }
     }
