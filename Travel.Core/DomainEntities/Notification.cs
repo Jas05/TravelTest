@@ -6,6 +6,11 @@ using System.Threading.Tasks;
 
 namespace Travel.Core.DomainEntities
 {
+    public class NotificationList
+    {
+        public List<Notification> Notifications { get; set; }
+    }
+
     public class Notification
     {
         public string ID { get; set; }
