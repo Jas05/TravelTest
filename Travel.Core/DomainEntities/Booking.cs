@@ -10,5 +10,7 @@ namespace Travel.Core.DomainEntities
     {
 
         public int BookingId { get; set; }
+        public int BookingRef { get; set; }
+        public int Surname { get; set; }
     }
 }
