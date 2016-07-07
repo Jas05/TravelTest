@@ -28,9 +28,6 @@ namespace Travel.Core.DAL
             JsonSerializer serializer = new JsonSerializer();
             T data = (T)serializer.Deserialize(file, typeof(T));
             return data;
-
         }
-
-
     }
 }
