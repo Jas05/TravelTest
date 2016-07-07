@@ -15,6 +15,7 @@ namespace Travel.Web.Controllers
         {
             var datamanager = new DataManager();
             var activityViewModel = new ActivityViewModel();
+
             activityViewModel.Activities = datamanager.GetAllActivities();
             return View(activityViewModel);
         }

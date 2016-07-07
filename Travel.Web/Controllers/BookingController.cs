@@ -26,7 +26,7 @@ namespace Travel.Web.Controllers
                 {
 
                     Helper.GetWeatherInfo("London");
-                    return RedirectToAction("Index", "Details");
+                    return RedirectToAction("Index", "Details",new { @bookingRef = model.BookingRef });
                    
                 }
                 return View("View");
