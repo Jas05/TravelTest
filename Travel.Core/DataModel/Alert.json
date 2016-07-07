@@ -1,0 +1,36 @@
+﻿{
+  "Alert": [
+    {
+      "ID": "1",
+	  "BookingID: "",
+	  "ResortID: "",
+	  "DestinationID: "",
+	  "AlertText" : "",
+	  "AlertType" : ""
+    },
+    {
+      "ID": "2",
+	  "BookingID: "",
+	  "ResortID: "",
+	  "DestinationID: "",
+	  "AlertText" : "",
+	  "AlertType" : ""
+    },
+    {
+      "ID": "3",
+	  "BookingID: "",
+	  "ResortID: "",
+	  "DestinationID: "",
+	  "AlertText" : "",
+	  "AlertType" : ""
+    },
+     {
+      "ID": "4",
+	  "BookingID: "",
+	  "ResortID: "",
+	  "DestinationID: "",
+	  "AlertText" : "",
+	  "AlertType" : ""
+    }
+  ]
+}
