@@ -65,12 +65,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Implementation\BookingService.cs" />
+    <Compile Include="DAL\DataManager.cs" />
+    <Compile Include="DomainEntities\Booking.cs" />
     <Compile Include="Implementation\JourneyService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="DataModel\Booking.json" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

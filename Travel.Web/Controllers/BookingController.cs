@@ -16,9 +16,14 @@ namespace Travel.Web.Controllers
 
         public bool ValidateUser(string bookingRef, string surname)
         {
-            
-            return true;
-
+            if(bookingRef == "123456" && surname == "spectrum")
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }
