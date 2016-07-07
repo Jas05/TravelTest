@@ -3,20 +3,23 @@
     {
       "ID": "1",
 	  "ResortName" : "Sliema",
+	  "ResortDescription" : "",
 	  "Latitude" : "",
 	  "Longitude" : "",
 	  "DestinationID" : "4"
     },
     {
       "ID": "2",
-	  "ResortName" : "Lambi",
+	  "ResortName" : "Puerto De La Cruz",
+	  "ResortDescription" : "",
 	  "Latitude" : "",
 	  "Longitude" : "",
 	  "DestinationID" : "2"
     },
     {
       "ID": "3",
-	  "ResortName" : "Lambi",
+	  "ResortName" : "La Pineda",
+	  "ResortDescription" : "",
 	  "Latitude" : "",
 	  "Longitude" : "",
 	  "DestinationID" : "3"
@@ -24,6 +27,7 @@
      {
       "ID": "4",
 	  "ResortName" : "Lambi",
+	  "ResortDescription" : "",
 	  "Latitude" : "",
 	  "Longitude" : "",
 	  "DestinationID" : "4"
