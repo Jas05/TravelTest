@@ -170,7 +170,14 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\gsdk.css" />
+    <Content Include="Content\img\activities.png" />
+    <Content Include="Content\img\beach-images-3.jpg" />
+    <Content Include="Content\img\contactus.jpg" />
+    <Content Include="Content\img\itenary.png" />
     <Content Include="Content\img\loginbg.jpg" />
+    <Content Include="Content\img\map.png" />
+    <Content Include="Content\img\notifications.png" />
+    <Content Include="Content\img\weather.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
