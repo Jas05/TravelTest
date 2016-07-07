@@ -61,6 +61,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -70,24 +71,30 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAL\DataManager.cs" />
-    <Compile Include="DomainEntities\Activity.cs" />
-    <Compile Include="DomainEntities\Destination.cs" />
-    <Compile Include="DomainEntities\Flight.cs" />
-    <Compile Include="DomainEntities\Resort.cs" />
-    <Compile Include="DomainEntities\Offer.cs" />
     <Compile Include="DomainEntities\Booking.cs" />
     <Compile Include="Implementation\JourneyService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="DataModel\Activity.json" />
-    <None Include="DataModel\Booking.json" />
-    <None Include="DataModel\Destination.json" />
-    <None Include="DataModel\Flight.json" />
-    <None Include="DataModel\Offer.json" />
-    <None Include="DataModel\Alert.json" />
-    <None Include="DataModel\Resort.json" />
+    <None Include="DataModel\Activities.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="DataModel\Booking.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="DataModel\Destination.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="DataModel\Flight.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="DataModel\Offers.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="DataModel\Resort.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

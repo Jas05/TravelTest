@@ -3,28 +3,37 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Travel.Web.ViewModels;
 
 namespace Travel.Web.Controllers
 {
     public class BookingController : Controller
     {
         // GET: Booking
+        [HttpGet]
         public ActionResult Index()
         {
-            return View();
+            return View("View");
         }
 
-        public bool ValidateUser(string bookingRef, string surname)
+        [HttpPost]
+        public ActionResult Index(BookingViewModel model)
         {
-            if(bookingRef == "123456" && surname == "spectrum")
+            if (ModelState.IsValid)
             {
-              
-                return true;
+                if (model.BookingRef == "123456" && model.LastName == "spectrum")
+                {
+                    return RedirectToAction("Index", "Details");
+                   
+                }
+                return View("View");
             }
             else
             {
-                return false;
+                return View("View");
             }
+           
         }
+        
     }
 }

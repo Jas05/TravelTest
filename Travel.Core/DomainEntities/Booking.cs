@@ -6,11 +6,19 @@ using System.Threading.Tasks;
 
 namespace Travel.Core.DomainEntities
 {
+
+    public class BookingList
+    {
+        public List<Booking> Booking { get; set; }
+
+    }
+
+
     public class Booking
     {
 
         public int BookingId { get; set; }
-        public int BookingRef { get; set; }
-        public int Surname { get; set; }
+        public string BookingRef { get; set; }
+        public string Surname { get; set; }
     }
 }
