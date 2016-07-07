@@ -7,10 +7,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Travel.Core.Implementation;
-using Travel.Core.Interfaces;
-using Travel.DAL;
-using Travel.DAL.Implementation;
-using Travel.DAL.Interfaces;
+
 
 namespace Travel.Web.App_Start
 {
@@ -27,10 +24,10 @@ namespace Travel.Web.App_Start
         {
             var container = new UnityContainer();
 
-            container.RegisterType(typeof(IRepository<>), typeof(RepositoryBase<>));
-            container.RegisterType<DbContext, TravelEntities>();
-            container.RegisterType<IJourney, Journey>();
-            container.RegisterType<IJourneyService, JourneyService>();
+            // container.RegisterType(typeof(IRepository<>), typeof(RepositoryBase<>));
+            // container.RegisterType<DbContext, TravelEntities>();
+            // container.RegisterType<IJourney, Journey>();
+            //container.RegisterType<IJourneyService, JourneyService>();
             return container;
 
         }

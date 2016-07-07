@@ -65,8 +65,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Implementation\BookingService.cs" />
     <Compile Include="Implementation\JourneyService.cs" />
-    <Compile Include="Interfaces\IJourneyService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -74,10 +74,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Travel.DAL\Travel.DAL.csproj">
-      <Project>{3c985a02-7b9c-4a05-b48f-92861d9216c8}</Project>
-      <Name>Travel.DAL</Name>
-    </ProjectReference>
+    <Folder Include="Interfaces\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

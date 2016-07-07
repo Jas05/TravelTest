@@ -225,10 +225,6 @@
       <Project>{3b614a53-fd95-4815-880f-06c6803bdd10}</Project>
       <Name>Travel.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Travel.DAL\Travel.DAL.csproj">
-      <Project>{3c985a02-7b9c-4a05-b48f-92861d9216c8}</Project>
-      <Name>Travel.DAL</Name>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
