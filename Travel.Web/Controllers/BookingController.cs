@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Travel.Core;
 using Travel.Web.ViewModels;
 
 namespace Travel.Web.Controllers
@@ -23,6 +24,8 @@ namespace Travel.Web.Controllers
             {
                 if (model.BookingRef == "123456" && model.LastName == "spectrum")
                 {
+
+                    Helper.GetWeatherInfo("London");
                     return RedirectToAction("Index", "Details");
                    
                 }
