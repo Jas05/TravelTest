@@ -1,31 +1,33 @@
 ﻿{
-  "Activity": [
+  "Activities": [
     {
       "ID": "1",
-	  "DestinationID": "1",
+      "DestinationID": "1",
       "Name": "Rafting",
-	  "Description": "Rafting and white water rafting are recreational outdoor activities which use an inflatable raft to navigate a river or other body of water.",
-	  "Price GBP" : "£ 44.99",
-	  "BookingURL" : "www.google.com",
-	  "ActivityType" : "Sport"
+      "Description": "Rafting and white water rafting are recreational outdoor activities which use an inflatable raft to navigate a river or other body of water.",
+      "PriceGBP": "£ 44.99",
+      "BookingURL": "www.google.com",
+      "ActivityType": "Sport"
     },
     {
       "ID": "2",
-	  "DestinationID": "1",
-	  "Name": "Museum Trip",
-	  "Description": "Museum Trip 2 for 1 offers",
-	  "Price GBP" : "£ 14.29",
-	  "BookingURL" : "www.google.com",
-	  "ActivityType" : "Museum"
+      "DestinationID": "1",
+      "Name": "Museum Trip",
+      "Description": "Museum Trip 2 for 1 offers",
+      "Price GBP": "£ 14.29",
+      "BookingURL": "www.google.com",
+      "ActivityType": "Museum"
+
     },
     {
       "ID": "3",
-	  "DestinationID": "1",
+      "DestinationID": "1",
       "Name": "Horse Riding",
-	  "Description": "Horse riding and horse riding lessons",
-	  "Price GBP" : "£ 35.49",
-	  "BookingURL" : "www.google.com",
-	  "ActivityType" : "Sport"
+      "Description": "Horse riding and horse riding lessons",
+      "Price GBP": "£ 35.49",
+      "BookingURL": "www.google.com",
+      "ActivityType": "Sport"
+
     },
     {
       "ID": "4",
@@ -54,14 +56,15 @@
       "BookingURL": "www.google.com",
       "ActivityType": "Walking Tour"
     },
-     {
+    {
       "ID": "4",
-	  "DestinationID": "1",
+      "DestinationID": "1",
       "Name": "Hiking",
-	  "Description": " hillwalking",
-	  "Price GBP" : "£ 10.19",
-	  "BookingURL" : "www.google.com",
-	  "ActivityType" : "Hiking"
+      "Description": " hillwalking",
+      "Price GBP": "£ 10.19",
+      "BookingURL": "www.google.com",
+      "ActivityType": "Hiking"
+
     }
   ]
 }

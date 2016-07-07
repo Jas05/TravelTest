@@ -1,8 +1,8 @@
 ﻿{
-  "Booking": [
+  "Bookings": [
     {
       "ID": "1",
-      "BookingRef": "LCPR072018",
+      "BookingRef": "123456",
       "Surname": "Jones",
       "NoOfAdults": 2,
       "NoOfChildren": 1,
@@ -30,7 +30,7 @@
       "ResortId": 1,
       "FlightID": 1
     },
-        {
+    {
       "ID": "4",
       "BookingRef": "LCPR072011",
       "Surname": "Mathews",

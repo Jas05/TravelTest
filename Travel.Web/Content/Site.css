@@ -40,7 +40,9 @@ footer{
     bottom: 0;
 }
 
-
+.hero-feature{
+    margin-bottom: 10px;
+}
 /*.login label{
     color: #fff;
 }*/

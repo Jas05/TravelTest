@@ -87,7 +87,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="DataModel\Activity.json" />
+    <None Include="DataModel\Activity.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="DataModel\Notification.json" />
     <None Include="DataModel\Booking.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
