@@ -13,5 +13,12 @@ namespace Travel.Web.Controllers
         {
             return View();
         }
+
+        public bool ValidateUser(string bookingRef, string surname)
+        {
+            
+            return true;
+
+        }
     }
 }
