@@ -17,8 +17,7 @@ namespace Travel.Web.Controllers
             var datamanager = new DataManager();
             var bookingDetails = datamanager.GetBookingDetails(bookingRef);
             var destinationDetails = datamanager.GetDestinationDetails(bookingDetails.DestinationId.ToString());
-            var flights = datamanager.Get
-
+            var flights = datamanager.GetFlightDetails(bookingDetails.DestinationId.ToString());
             return View();
         }
     }
