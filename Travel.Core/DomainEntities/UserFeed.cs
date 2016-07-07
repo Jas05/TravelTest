@@ -8,7 +8,7 @@ namespace Travel.Core.DomainEntities
 {
     public class UserFeed
     {
-        public int ID { get; set; }
-        public int DestinationID { get; set; }
+        public string ID { get; set; }
+        public string DestinationID { get; set; }
     }
 }

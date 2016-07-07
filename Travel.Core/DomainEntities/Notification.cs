@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Travel.Core.DomainEntities
 {
-    public class Alert
+    public class Notification
     {
-        public int Id { get; set; }
+        public string ID { get; set; }
 
     }
 }

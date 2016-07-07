@@ -17,7 +17,7 @@ namespace Travel.Core.DomainEntities
     public class Booking
     {
 
-        public int BookingId { get; set; }
+        public string ID { get; set; }
         public string BookingRef { get; set; }
         public string Surname { get; set; }
     }

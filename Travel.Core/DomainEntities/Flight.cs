@@ -8,6 +8,6 @@ namespace Travel.Core.DomainEntities
 {
     public class Flight
     {
-        public int ID { get; set; }
+        public string ID { get; set; }
     }
 }

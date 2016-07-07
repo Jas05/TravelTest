@@ -8,7 +8,7 @@ namespace Travel.Core.DomainEntities
 {
     public class Activity
     {
-        public int Id { get; set; }
+        public string ID { get; set; }
 
     }
 }

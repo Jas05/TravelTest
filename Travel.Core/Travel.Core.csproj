@@ -72,7 +72,7 @@
   <ItemGroup>
     <Compile Include="DAL\DataManager.cs" />
     <Compile Include="DomainEntities\Activity.cs" />
-    <Compile Include="DomainEntities\Alert.cs" />
+    <Compile Include="DomainEntities\Notification.cs" />
     <Compile Include="DomainEntities\Booking.cs" />
     <Compile Include="DomainEntities\Destination.cs" />
     <Compile Include="DomainEntities\Flight.cs" />
@@ -85,7 +85,7 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="DataModel\Activity.json" />
-    <None Include="DataModel\Alert.json" />
+    <None Include="DataModel\Notification.json" />
     <None Include="DataModel\Booking.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
