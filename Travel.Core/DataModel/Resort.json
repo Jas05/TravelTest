@@ -1,0 +1,32 @@
+﻿{
+  "Resort": [
+    {
+      "ID": "1",
+	  "ResortName" : "Sliema",
+	  "Latitude" : "",
+	  "Longitude" : "",
+	  "DestinationID" : "4"
+    },
+    {
+      "ID": "2",
+	  "ResortName" : "Lambi",
+	  "Latitude" : "",
+	  "Longitude" : "",
+	  "DestinationID" : "2"
+    },
+    {
+      "ID": "3",
+	  "ResortName" : "Lambi",
+	  "Latitude" : "",
+	  "Longitude" : "",
+	  "DestinationID" : "3"
+    },
+     {
+      "ID": "4",
+	  "ResortName" : "Lambi",
+	  "Latitude" : "",
+	  "Longitude" : "",
+	  "DestinationID" : "4"
+    },
+  ]
+}

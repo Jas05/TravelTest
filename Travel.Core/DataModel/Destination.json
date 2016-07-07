@@ -1,0 +1,24 @@
+﻿{
+  "Destination": [
+    {
+      "ID": "1",
+	  "Country" : "Spain",
+	  "Region" : "Lanzarote"
+    },
+    {
+      "ID": "2",
+      "Country" : "France",
+	  "Region" : "Paris"
+    },
+    {
+      "ID": "3",
+      "Country" : "Greece",
+	  "Region" : "Kos"
+    },
+        {
+      "ID": "4",
+      "Country" : "Malta",
+	  "Region" : "Malta"
+    }
+  ]
+}

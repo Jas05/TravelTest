@@ -76,7 +76,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="DataModel\Activities.json" />
     <None Include="DataModel\Booking.json" />
+    <None Include="DataModel\Destination.json" />
+    <None Include="DataModel\Flight.json" />
+    <None Include="DataModel\Offers.json" />
+    <None Include="DataModel\Resort.json" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
