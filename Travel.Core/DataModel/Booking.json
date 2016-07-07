@@ -1,0 +1,48 @@
+﻿{
+  "Booking": [
+    {
+      "ID": "1",
+      "BookingRef": "LCPR072018",
+      "Surname": "Bhatia",
+      "NoOfAdults": 2,
+      "NoOfChildren": 1,
+      "TotalPax": 3,
+      "ResortId": 1,
+      "FlightID": 1,
+      "DestinationId": 1
+    },
+    {
+      "ID": "1",
+      "BookingRef": "LCPR072019",
+      "Surname": "Shoni",
+      "NoOfAdults": 2,
+      "NoOfChildren": 1,
+      "TotalPax": 3,
+      "ResortId": 1,
+      "FlightID": 1,
+      "DestinationId": 1
+    },
+    {
+      "ID": "1",
+      "BookingRef": "LCPR072010",
+      "Surname": "Veer",
+      "NoOfAdults": 2,
+      "NoOfChildren": 1,
+      "TotalPax": 3,
+      "ResortId": 1,
+      "FlightID": 1,
+      "DestinationId": 1
+    },
+        {
+      "ID": "1",
+      "BookingRef": "LCPR072011",
+      "Surname": "Mathews",
+      "NoOfAdults": 2,
+      "NoOfChildren": 0,
+      "TotalPax": 2,
+      "ResortId": 1,
+      "FlightID": 1,
+      "DestinationId": 1
+    },
+  ]
+}
