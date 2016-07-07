@@ -29,6 +29,13 @@ namespace Travel.Core.DAL
             return activitiesList.Activities.Where(x => x.DestinationID == destinationID).ToList();
         }
 
+        public List<Activity> GetAllActivities()
+        {
+
+            var activitiesList = DeserializeJson<ActivityList>(Path.Combine(executableLocation + @"bin\DataModel\Activity.json"));
+            return activitiesList.Activities.ToList();
+        }
+
         public List<Destination> GetDestinationDetails(string destinationID)
         {
 
