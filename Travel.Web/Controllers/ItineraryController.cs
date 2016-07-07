@@ -15,8 +15,10 @@ namespace Travel.Web.Controllers
         {
             var viewModel = new ItineraryViewModel();
             var datamanager = new DataManager();
-            // var bookingDetails = datamanager.GetBookingDetails(bookingRef);
-            //var flights = datamanager.GetDestinationDetails(bookingDetails.De)
+            var bookingDetails = datamanager.GetBookingDetails(bookingRef);
+            var destinationDetails = datamanager.GetDestinationDetails(bookingDetails.DestinationId.ToString());
+            var flights = datamanager.Get
+
             return View();
         }
     }

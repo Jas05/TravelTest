@@ -215,10 +215,10 @@
     <Content Include="Views\Booking\Index.cshtml" />
     <Content Include="Views\Details\Index.cshtml" />
     <Content Include="Views\Booking\View.cshtml" />
-    <Content Include="Views\Activities\Index.cshtml" />
     <Content Include="Views\Details\Contact.cshtml" />
     <Content Include="Views\Contact\Contact.cshtml" />
     <Content Include="Views\Contact\Index.cshtml" />
+    <Content Include="Views\Activity\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

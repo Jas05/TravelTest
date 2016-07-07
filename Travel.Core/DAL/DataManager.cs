@@ -43,6 +43,12 @@ namespace Travel.Core.DAL
             return destinationList.Destinations.Where(x => x.ID == destinationID).ToList();
         }
 
+        public List<Destination> GetFlightDetails(string destinationID)
+        {
+            var destinationList = DeserializeJson<DestinationList>(Path.Combine(executableLocation + @"bin\DataModel\Flights.json"));
+            return destinationList.Destinations.Where(x => x.ID == destinationID).ToList();
+        }
+
 
         private static T DeserializeJson<T>(string jsonfile)
         {
