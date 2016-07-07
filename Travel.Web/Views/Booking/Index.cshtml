@@ -1,9 +1,21 @@
 ﻿@model Travel.Web.ViewModels.BookingViewModel
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "login";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Index</h2>
+<h2>Login</h2>
+
+<form>
+    <div class="form-group">
+        <label for="BookingReference">Booking reference</label>
+        <input type="text" value="" class="form-control" id="BookingReference" name="BookingReference" >
+    </div>
+    <div class="form-group">
+        <label for="LastName">Last name</label>
+        <input type="text" class="form-control" id="LastName" name="LastName">
+    </div>
+    <button type="submit" class="btn btn-default">Login</button>
+</form>
 

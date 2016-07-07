@@ -24,3 +24,18 @@ select,
 textarea {
     max-width: 280px;
 }
+
+
+.login h2{
+    margin-bottom: 30px;
+}
+
+.login footer{
+    position: fixed;
+    bottom: 0;
+}
+
+footer{
+    border-top: 1px solid #eeeeee;
+    width: 100%;
+}

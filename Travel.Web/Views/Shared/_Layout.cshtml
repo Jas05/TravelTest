@@ -6,8 +6,24 @@
     <title>@ViewBag.Title - My ASP.NET Application</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    @{
+        string bodyCssClass = string.Empty;
+        string pageName = ViewBag.Title;
+        switch (pageName)
+        {
+            case "login":
+                bodyCssClass = "login";
+                break;
+            case "details":
+                bodyCssClass = "details";
+                break;
+            default:
+                bodyCssClass = "home";
+                break;
+        }
+    }
 </head>
-<body>
+<body class="@bodyCssClass">
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -30,7 +46,6 @@
     </div>
     <div class="container body-content">
         @RenderBody()
-        <hr />
         <footer>
             <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
         </footer>
