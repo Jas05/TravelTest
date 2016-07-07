@@ -1,0 +1,78 @@
+﻿@model Travel.Web.ViewModels.ItineraryViewModel
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Itinerary</h2>
+<hr />
+<div>
+    <div class="col-xs-3">
+        @*Logo*@
+    </div>
+    <div class="col-xs-9">
+        <div class="col-xs-6">
+            <div>
+                @Model.DestinationName -
+            </div>
+            <div>
+                @Model.OutboundDepartureDatetime
+            </div>
+        </div>
+        <div class="col-xs-6">
+            <div>
+                @Model.ArrivalName -
+            </div>
+            <div>
+                @Model.OutboundArrivalDateTime
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="col-xs-3">
+            @*Transfer Logo*@
+        </div>
+        <div class="col-xs-9">
+            Transfer to hotel
+        </div>
+    </div>
+    <div>
+        <div class="col-xs-3">
+            @*House Logo*@
+        </div>
+        <div class="col-xs-9">
+            <div>@Model.HotelName</div>
+            <div>@Model.OutboundArrivalDateTime @Model.HotelDuration</div>
+        </div>
+    </div>
+    <div >
+        <div class="col-xs-3">
+            @*Transfer Logo*@
+        </div>
+        <div class="col-xs-9">
+            Transfer to Airport
+        </div>
+    </div>
+    <div class="col-xs-3">
+        @*Logo*@
+    </div>
+    <div class="col-xs-9">
+        <div class="col-xs-6">
+            <div>
+                @Model.ArrivalName -
+            </div>
+            <div>
+                @Model.InboundDepartureTime
+            </div>
+        </div>
+        <div class="col-xs-6">
+            @Model.DestinationName
+        </div>
+        <div>
+            @Model.InboundArrivalTime
+        </div>
+    </div>
+
+</div>
+

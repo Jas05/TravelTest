@@ -45,8 +45,14 @@ namespace Travel.Core.DAL
 
         public Flight GetFlightDetails(string flightId)
         {
-            var destinationList = DeserializeJson<FlightList>(Path.Combine(executableLocation + @"bin\DataModel\Flights.json"));
+            var destinationList = DeserializeJson<FlightList>(Path.Combine(executableLocation + @"bin\DataModel\Flight.json"));
             return destinationList.Flights.FirstOrDefault(x => x.ID == flightId);
+        }
+
+        public Resort GetResortDetails(string resortId)
+        {
+            var destinationList = DeserializeJson<ResortList>(Path.Combine(executableLocation + @"bin\DataModel\Resort.json"));
+            return destinationList.Resorts.FirstOrDefault(x => x.ID == resortId);
         }
 
 

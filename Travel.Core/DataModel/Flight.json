@@ -1,34 +1,42 @@
 ﻿{
-  "Flight": [
+  "Flights": [
     {
       "ID": "1",
-      "InboundFlightDate" : "24/02/2017",
-	  "InboundFlightTime" : "14:15",
-	  "InboundFlightDuration" : "3h",
-	  "InboundFlightOperator" : "Ryanair",
-	  "InboundFlightCode" : "CX12SD",
-	  "OutboundFlightDate" : "28/02/2017",
-	  "OutboundFlightTime" : "19:35",
-	  "OutboundFlightDuration" : "2.5h",
-	  "OutboundFlightOperator" : "Ryanair",
-	  "OutboundFlightCode" : "CX56SD",
-	  "FlightFrom" : "Gatwick Airport",
-	  "FlightTo" : "Manchester Airport"
+      "InboundDepartureFlightDate": "24/02/2017",
+      "InboundDepartureFlightTime": "14:15",
+      "InboundArrivalFlightDate": "24/02/2017",
+      "InboundArrivalFlightTime": "17:15",
+      "InboundFlightDuration": "3h",
+      "InboundFlightOperator": "Ryanair",
+      "InboundFlightCode": "CX12SD",
+      "OutboundDepartureFlightDate": "28/02/2017",
+      "OutboundDepartureFlightTime": "19:35",
+      "OutboundArrivalFlightDate": "28/02/2017",
+      "OutboundArrivalFlightTime": "22:05",
+      "OutboundFlightDuration": "2.5h",
+      "OutboundFlightOperator": "Ryanair",
+      "OutboundFlightCode": "CX56SD",
+      "FlightFrom": "Gatwick Airport",
+      "FlightTo": "Madrid Airport"
     },
-        {
+    {
       "ID": "2",
-      "InboundFlightDate" : "22/08/2016",
-	  "InboundFlightTime" : "08:25",
-	  "InboundFlightDuration" : "2h",
-	  "InboundFlightOperator" : "Easyjet",
-	  "InboundFlightCode" : "DA1QS2",
-	  "OutboundFlightDate" : "28/02/2017",
-	  "OutboundFlightTime" : "23:05",
-	  "OutboundFlightDuration" : "2.5h",
-	  "OutboundFlightOperator" : "EasyJet",
-	  "OutboundFlightCode" : "WEF23J",
-	  "FlightFrom" : "London Luton",
-	  "FlightTo" : "Berlin Airport"
+      "OutboundDepartureFlightDate": "28/02/2017",
+      "OutboundDepartureFlightTime": "17:05",
+      "OutboundArrivalFlightDate": "28/02/2017",
+      "OutboundArrivalFlightTime": "19:05",
+      "InboundepartureFlightDate": "06/03/2017",
+      "InboundDepartureFlightTime": "08:25",
+      "InboundArrivalFlightDate": "06/03/2017",
+      "InboundArrivalFlightTime": "10:25",
+      "InboundFlightDuration": "2h",
+      "InboundFlightOperator": "Easyjet",
+      "InboundFlightCode": "DA1QS2",
+      "OutboundFlightDuration": "2.5h",
+      "OutboundFlightOperator": "EasyJet",
+      "OutboundFlightCode": "WEF23J",
+      "FlightFrom": "London Luton",
+      "FlightTo": "Berlin Airport"
     }
   ]
 }

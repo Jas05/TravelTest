@@ -14,13 +14,20 @@ namespace Travel.Core.DomainEntities
     public class Flight
     {
         public string ID { get; set; }
-        public string InboundFlightDate { get; set; }
-        public string InboundFlightTime { get; set; }
+        public string InboundDepartureFlightDate { get; set; }
+        public string InboundDepartureFlightTime { get; set; }
+
+        public string InboundArrivalFlightDate { get; set; }
+
+        public string InboundArrivalFlightTime { get; set; }
+
         public string InboundFlightDuration { get; set; }
         public string InboundFlightOperator { get; set; }
         public string InboundFlightCode { get; set; }
-        public string OutboundFlightDate { get; set; }
-        public string OutboundFlightTime { get; set; }
+        public string OutboundDepartureFlightDate { get; set; }
+        public string OutboundDepartureFlightTime { get; set; }
+        public string OutboundArrivalFlightDate { get; set; }
+        public string OutboundArrivalFlightTime { get; set; }
         public string OutboundFlightDuration { get; set; }
         public string OutboundFlightOperator { get; set; }
         public string OutboundFlightCode { get; set; }

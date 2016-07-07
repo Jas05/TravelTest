@@ -1,32 +1,32 @@
 ﻿{
-  "Destination": [
+  "Destinations": [
     {
       "ID": "1",
-	  "Country" : "Spain",
-	  "Region" : "Madrid",
-	  "Latitude" : "",
-	  "Longitude" : ""
+      "Country": "Spain",
+      "Region": "Madrid",
+      "Latitude": "",
+      "Longitude": ""
     },
     {
       "ID": "2",
-      "Country" : "France",
-	  "Region" : "Paris",
-	  "Latitude" : "",
-	  "Longitude" : ""
+      "Country": "France",
+      "Region": "Paris",
+      "Latitude": "",
+      "Longitude": ""
     },
     {
       "ID": "3",
-      "Country" : "Greece",
-	  "Region" : "Athens",
-	  "Latitude" : "",
-	  "Longitude" : ""
+      "Country": "Greece",
+      "Region": "Athens",
+      "Latitude": "",
+      "Longitude": ""
     },
     {
       "ID": "4",
-      "Country" : "Malta",
-	  "Region" : "Malta",
-	  "Latitude" : "",
-	  "Longitude" : ""
+      "Country": "Malta",
+      "Region": "Malta",
+      "Latitude": "",
+      "Longitude": ""
     }
   ]
 }

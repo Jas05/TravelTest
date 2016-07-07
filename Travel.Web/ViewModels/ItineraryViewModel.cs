@@ -17,7 +17,11 @@ namespace Travel.Web.ViewModels
 
         public string HotelName { get; set; }
 
-        public string Duration { get; set; }
+        public string HotelDuration { get; set; }
+
+        public string OutboundDuration { get; set; }
+
+        public string InboundDuration { get; set; }
 
         public string BoardBasis { get; set; }
 

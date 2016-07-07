@@ -14,5 +14,7 @@ namespace Travel.Core.DomainEntities
     public class Resort
     {
         public string ID { get; set; }
+
+        public string ResortName { get; set; }
     }
 }

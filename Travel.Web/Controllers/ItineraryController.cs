@@ -18,9 +18,19 @@ namespace Travel.Web.Controllers
             var bookingDetails = datamanager.GetBookingDetails(bookingRef);
             var destinationDetails = datamanager.GetDestinationDetails(bookingDetails.DestinationId.ToString());
             var flights = datamanager.GetFlightDetails(bookingDetails.DestinationId.ToString());
+            var resorts = datamanager.GetResortDetails(bookingDetails.ResortId.ToString());
 
-            viewModel.ArrivalName = destinationDetails.Region + " " + destinationDetails.Country;
-            return View();
+            viewModel.ArrivalName = flights.FlightTo;
+            viewModel.DestinationName = flights.FlightFrom;
+            viewModel.OutboundDepartureDatetime = flights.OutboundDepartureFlightDate + " " + flights.OutboundDepartureFlightTime;
+            viewModel.OutboundArrivalDateTime = flights.OutboundArrivalFlightDate +" "+ flights.OutboundArrivalFlightTime;
+            viewModel.InboundDepartureTime = flights.InboundDepartureFlightDate + " " + flights.InboundDepartureFlightTime;
+            viewModel.InboundArrivalTime = flights.InboundArrivalFlightDate + " " + flights.InboundArrivalFlightTime;
+            viewModel.OutboundDuration = flights.OutboundFlightDuration;
+            viewModel.InboundDuration = flights.InboundFlightDuration;
+            viewModel.BoardBasis = bookingDetails.BoardBasis;
+            viewModel.HotelName = resorts.ResortName;
+            return View(viewModel);
         }
     }
 }
