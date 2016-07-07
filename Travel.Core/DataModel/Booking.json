@@ -8,8 +8,7 @@
       "NoOfChildren": 1,
       "TotalPax": 3,
       "ResortId": 1,
-      "FlightID": 1,
-      "DestinationId": 1
+      "FlightID": 1
     },
     {
       "ID": "2",
@@ -26,11 +25,10 @@
       "BookingRef": "LCPR072010",
       "Surname": "Wilkinson",
       "NoOfAdults": 2,
-      "NoOfChildren": 1,
-      "TotalPax": 3,
+      "NoOfChildren": 2,
+      "TotalPax": 4,
       "ResortId": 1,
-      "FlightID": 1,
-      "DestinationId": 1
+      "FlightID": 1
     },
         {
       "ID": "4",
@@ -40,8 +38,7 @@
       "NoOfChildren": 0,
       "TotalPax": 2,
       "ResortId": 1,
-      "FlightID": 1,
-      "DestinationId": 1
+      "FlightID": 1
     }
   ]
 }
