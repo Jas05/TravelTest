@@ -6,13 +6,14 @@ using System.Threading.Tasks;
 
 namespace Travel.Core.DomainEntities
 {
-    public class ResortList
+    public class UserFeedList
     {
-        public List<Resort> Resorts { get; set; }
+        public List<UserFeed> UserFeeds { get; set; }
     }
 
-    public class Resort
+    public class UserFeed
     {
         public string ID { get; set; }
+        public string DestinationID { get; set; }
     }
 }

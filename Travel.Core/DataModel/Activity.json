@@ -5,28 +5,36 @@
 	  "DestinationID": "1",
       "Name": "Rafting",
 	  "Description": "Rafting and white water rafting are recreational outdoor activities which use an inflatable raft to navigate a river or other body of water.",
-	  "Price GBP" : "£ 44.99"
+	  "Price GBP" : "£ 44.99",
+	  "BookingURL" : "www.google.com",
+	  "ActivityType" : "Sport"
     },
     {
       "ID": "2",
 	  "DestinationID": "1",
 	  "Name": "Museum Trip",
 	  "Description": "Museum Trip",
-	  "Price GBP" : "£ 14.29"
+	  "Price GBP" : "£ 14.29",
+	  "BookingURL" : "www.google.com",
+	  "ActivityType" : "Sightseeing"
     },
     {
       "ID": "3",
 	  "DestinationID": "1",
       "Name": "Horse Riding",
 	  "Description": "Horse Riding",
-	  "Price GBP" : "£ 35.49"
+	  "Price GBP" : "£ 35.49",
+	  "BookingURL" : "www.google.com",
+	  "ActivityType" : "Sport"
     },
         {
       "ID": "4",
 	  "DestinationID": "1",
       "Name": "Old City tour",
 	  "Description": "Old City tour",
-	  "Price GBP" : "£ 10.19"
+	  "Price GBP" : "£ 10.19",
+	  "BookingURL" : "www.google.com",
+	  "ActivityType" : "Sightseeing"
     }
   ]
 }

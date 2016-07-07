@@ -1,36 +1,32 @@
 ﻿{
-  "Alert": [
+  "Notification": [
     {
       "ID": "1",
 	  "BookingID: "",
 	  "ResortID: "",
-	  "DestinationID: "",
-	  "AlertText" : "",
-	  "AlertType" : ""
+	  "NotificationText" : "",
+	  "NotificationType" : "Booking"
     },
     {
       "ID": "2",
 	  "BookingID: "",
 	  "ResortID: "",
-	  "DestinationID: "",
-	  "AlertText" : "",
-	  "AlertType" : ""
+	  "NotificationText" : "",
+	  "NotificationType" : "Resort"
     },
     {
       "ID": "3",
 	  "BookingID: "",
 	  "ResortID: "",
-	  "DestinationID: "",
-	  "AlertText" : "",
-	  "AlertType" : ""
+	  "NotificationText" : "",
+	  "NotificationType" : "Booking"
     },
      {
       "ID": "4",
 	  "BookingID: "",
 	  "ResortID: "",
-	  "DestinationID: "",
-	  "AlertText" : "",
-	  "AlertType" : ""
+	  "NotificationText" : "",
+	  "NotificationType" : "Resort"
     }
   ]
 }

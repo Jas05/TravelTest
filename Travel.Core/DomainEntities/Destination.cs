@@ -6,8 +6,13 @@ using System.Threading.Tasks;
 
 namespace Travel.Core.DomainEntities
 {
+    public class DestinationList
+    {
+        public List<Destination> Destinations { get; set; }
+    }
+
     public class Destination
     {
-        public int ID { get; set; }
+        public string ID { get; set; }
     }
 }

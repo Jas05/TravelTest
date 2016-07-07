@@ -9,15 +9,14 @@ namespace Travel.Core.DomainEntities
 
     public class BookingList
     {
-        public List<Booking> Booking { get; set; }
-
+        public List<Booking> Bookings { get; set; }
     }
 
 
     public class Booking
     {
 
-        public int BookingId { get; set; }
+        public string ID { get; set; }
         public string BookingRef { get; set; }
         public string Surname { get; set; }
     }
