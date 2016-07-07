@@ -52,4 +52,7 @@ footer{
    background: #04025E url('img/loginbg.jpg') no-repeat left top;
 
 }*/
-
+body.activities .thumbnail{
+    min-height: 330px;
+    margin-bottom: 10px;
+}
