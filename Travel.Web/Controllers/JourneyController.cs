@@ -24,16 +24,77 @@ namespace Travel.Web.Controllers
             var viewModel = new JourneyViewModel();
             viewModel.journeyTypeList = new List<JourneyModel>();
             var journeyTypes = journeyService.GetAllJourneyTypes();
-            foreach (var journeyType in journeyTypes)
+            PopulateJourneyTypeList(viewModel, journeyTypes);
+
+            return View(viewModel);
+        }
+
+        public bool Create(string newJourneyType)
+        {
+            var viewModel = new JourneyViewModel();
+            viewModel.journeyTypeList = new List<JourneyModel>();
+
+            if (!string.IsNullOrEmpty(newJourneyType))
+            {
+                var model = journeyService.CreateNewJourneyType(newJourneyType);
+
+                PopulateJourneyTypeList(viewModel, model);
+            }
+
+            return true;
+
+            // RedirectToAction("Index", "Journey");
+        }
+
+        public bool Delete(int id)
+        {
+            var viewModel = new JourneyViewModel();
+            viewModel.journeyTypeList = new List<JourneyModel>();
+            var model = journeyService.DeleteJourneyType(id);
+
+            PopulateJourneyTypeList(viewModel, model);
+            return true;
+        }
+
+        public ActionResult Edit(int id, string journeyTypeName)
+        {
+            var viewModel = new JourneyViewModel();
+            viewModel.journeyTypeList = new List<JourneyModel>();
+            viewModel.JourneyTypeId = id;
+            viewModel.JourneyType = journeyTypeName.Trim();
+            return View(viewModel);
+        }
+
+        public ActionResult EditJourneyType(int id, string journeyTypeName)
+        {
+            var journeyModel = new JourneyModel()
+            {
+                Id = id,
+                Name = journeyTypeName.Trim()
+            };
+            journeyService.EditJourneyType(id, journeyTypeName);
+
+            var viewModel = new JourneyViewModel();
+            viewModel.journeyTypeList = new List<JourneyModel>();
+            var journeyTypes = journeyService.GetAllJourneyTypes();
+            PopulateJourneyTypeList(viewModel, journeyTypes);
+
+
+            return View("Index", viewModel);
+        } 
+
+        private static void PopulateJourneyTypeList(JourneyViewModel viewModel, List<DAL.JourneyType> model)
+        {
+            foreach (var journeyType in model)
             {
                 viewModel.journeyTypeList.Add(new JourneyModel
                 {
                     Id = journeyType.Id,
                     Name = journeyType.Name
                 });
-             }
-
-            return View(viewModel);
+            }
         }
+
+
     }
 }

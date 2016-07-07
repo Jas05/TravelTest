@@ -35,9 +35,9 @@ namespace Travel.DAL.Implementation
             return dbSet.FirstOrDefault(predicate);
         }
 
-        public TEntity Find (Expression<Func<TEntity, bool>> predicate)
+        public TEntity Find (int id)
         {
-            return dbSet.Find(predicate);
+            return dbSet.Find(id);
         }
 
         public void Update(TEntity entity, int id)
@@ -62,6 +62,12 @@ namespace Travel.DAL.Implementation
         {
             dbSet.Add(entity);
             travelContext.SaveChanges();
+        }
+
+        public void DeleteByID(int id)
+        {
+            var journeyType = dbSet.Find(id);
+            dbSet.Remove(journeyType);
         }
     }
 }

@@ -10,5 +10,11 @@ namespace Travel.Core.Interfaces
     public interface IJourneyService
     {
         List<JourneyType> GetAllJourneyTypes();
+
+        List<JourneyType> CreateNewJourneyType(string journeyType);
+
+        List<JourneyType> DeleteJourneyType(int id);
+
+        void EditJourneyType(int id, string journeyTypeName);
     }
 }
