@@ -15,12 +15,13 @@ namespace Travel.Core.DAL
     {
         private readonly string executableLocation = HttpRuntime.AppDomainAppPath;
 
-        public Booking GetBookingDetails(string bookingRef, string surname)
+        public Booking GetBookingDetails(string bookingRef)
         {
 
             var bookinglist = DeserializeJson<BookingList>(Path.Combine(executableLocation + @"bin\DataModel\Booking.json"));
-            return bookinglist.Booking.FirstOrDefault(x => x.BookingRef.Equals(bookingRef) && x.Surname.Equals(surname));
+            return bookinglist.Booking.FirstOrDefault(x => x.BookingRef.Equals(bookingRef));
         }
+
 
         private static T DeserializeJson<T>(string jsonfile)
         {
