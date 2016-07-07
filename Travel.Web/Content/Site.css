@@ -25,6 +25,11 @@ textarea {
     max-width: 280px;
 }
 
+footer{
+    border-top: 1px solid #eeeeee;
+    width: 100%;
+}
+
 
 .login h2{
     margin-bottom: 30px;
@@ -35,7 +40,14 @@ textarea {
     bottom: 0;
 }
 
-footer{
-    border-top: 1px solid #eeeeee;
-    width: 100%;
-}
+
+/*.login label{
+    color: #fff;
+}*/
+
+/*body.login {
+   background-image: url('img/loginbg.jpg') none;
+   background: #04025E url('img/loginbg.jpg') no-repeat left top;
+
+}*/
+
