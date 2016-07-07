@@ -76,6 +76,7 @@
     <Compile Include="DomainEntities\Booking.cs" />
     <Compile Include="DomainEntities\Destination.cs" />
     <Compile Include="DomainEntities\Flight.cs" />
+    <Compile Include="DomainEntities\UserFeed.cs" />
     <Compile Include="DomainEntities\Offer.cs" />
     <Compile Include="DomainEntities\Resort.cs" />
     <Compile Include="Implementation\JourneyService.cs" />
@@ -84,6 +85,7 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="DataModel\Activity.json" />
+    <None Include="DataModel\Alert.json" />
     <None Include="DataModel\Booking.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -94,6 +96,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="DataModel\Offer.json" />
+    <None Include="DataModel\UserFeed.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="DataModel\Resort.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

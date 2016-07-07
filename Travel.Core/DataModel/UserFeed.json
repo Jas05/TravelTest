@@ -1,0 +1,28 @@
+﻿{
+  "UserFeed": [
+    {
+      "ID": "1",
+	  "ResortID: "1",
+	  "DateAdded" : "22/03/2016 12:53:48",
+	  "Text" : "Hey, I'm here, great weather."
+    },
+    {
+      "ID": "2",
+	  "ResortID: "1",
+	  "DateAdded" : "22/03/2016 12:53:48",
+	  "Text" : "Hey, I'm here, great weather."
+    },
+    {
+      "ID": "3",
+	  "ResortID: "1",
+	  "DateAdded" : "22/03/2016 12:53:48",
+	  "Text" : "Hey, I'm here, great weather."
+    },
+     {
+      "ID": "4",
+	  "ResortID: "1",
+	  "DateAdded" : "22/03/2016 12:53:48",
+	  "Text" : "Hey, I'm here, great weather."
+    },
+  ]
+}

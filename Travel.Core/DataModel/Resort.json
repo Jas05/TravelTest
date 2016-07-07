@@ -2,11 +2,11 @@
   "Resort": [
     {
       "ID": "1",
-	  "ResortName" : "Sliema",
+	  "ResortName" : "Madrid Hilton",
 	  "ResortDescription" : "",
 	  "Latitude" : "",
 	  "Longitude" : "",
-	  "DestinationID" : "4"
+	  "DestinationID" : "1"
     },
     {
       "ID": "2",
