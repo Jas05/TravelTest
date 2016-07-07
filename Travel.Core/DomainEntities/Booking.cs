@@ -10,7 +10,6 @@ namespace Travel.Core.DomainEntities
     public class BookingList
     {
         public List<Booking> Booking { get; set; }
-
     }
 
 
