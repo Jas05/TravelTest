@@ -8,7 +8,10 @@
       "NoOfChildren": 1,
       "TotalPax": 3,
       "ResortId": 1,
-      "FlightID": 1
+      "FlightID": 1,
+      "DestinationId": 1,
+      "BoardBasis": "All inclusive",
+        "Duration": 7
     },
     {
       "ID": "2",
@@ -18,7 +21,10 @@
       "NoOfChildren": 0,
       "TotalPax": 3,
       "ResortID": 1,
-      "FlightID": 1
+      "FlightID": 1,
+      "DestinationId": 1,
+      "BoardBasis": "Half Board",
+        "Duration": 7
     },
     {
       "ID": "3",
@@ -28,7 +34,10 @@
       "NoOfChildren": 2,
       "TotalPax": 4,
       "ResortId": 1,
-      "FlightID": 1
+      "FlightID": 1,
+      "DestinationId": 3,
+      "BoardBasis": "Half Board",
+        "Duration": 7
     },
     {
       "ID": "4",
@@ -38,7 +47,10 @@
       "NoOfChildren": 0,
       "TotalPax": 2,
       "ResortId": 1,
-      "FlightID": 1
+      "FlightID": 1,
+      "DestinationId": 2,
+      "BoardBasis": "Half Board",
+        "Duration": 7
     }
   ]
 }
