@@ -14,5 +14,7 @@ namespace Travel.Core.DomainEntities
     public class Destination
     {
         public string ID { get; set; }
+        public string Country { get; set; }
+        public string Region { get; set; }
     }
 }
