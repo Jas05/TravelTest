@@ -209,6 +209,7 @@
     <Content Include="Views\Journey\Edit.cshtml" />
     <Content Include="Views\Booking\Index.cshtml" />
     <Content Include="Views\Details\Index.cshtml" />
+    <Content Include="Views\Booking\View.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
