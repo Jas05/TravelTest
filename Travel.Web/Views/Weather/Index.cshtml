@@ -37,11 +37,22 @@
                             <img src="http://openweathermap.org/img/w/@(weath.weather.FirstOrDefault().icon).png" alt="">
                         </div>
                         <div class="col-xs-9 text-right">
-                            <h4 class="huge" style="font-weight: bold;">@String.Format("{0:MM/dd/yy}", Convert.ToDateTime(weath.dt_txt))</h4>
-                            <p><span  style="font-weight: bold;">MAX temp:</span> @weath.main.temp_max</p>
-                            <p><span  style="font-weight: bold;">MIN temp:</span> @weath.main.temp_min</p>
-                            <p><span  style="font-weight: bold;">Humdidity:</span> @weath.main.humidity</p>
-                            <p><span  style="font-weight: bold;">Pressure:</span> @weath.main.pressure</p>
+                            @{ 
+                                System.DateTime dtDateTime = new DateTime(1970, 1, 1, 0, 0, 0, 0, System.DateTimeKind.Utc);
+                                dtDateTime = dtDateTime.AddSeconds(Math.Round(Convert.ToDouble(weath.dt) / 1000)).ToLocalTime();
+
+                                var epoch = new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc);
+                                epoch.AddMilliseconds(Convert.ToDouble(weath.dt));
+
+                                var timeSpan = TimeSpan.FromSeconds(Convert.ToDouble(weath.dt));
+                                var localDateTime = epoch.Add(timeSpan).ToLocalTime();
+                            }
+
+                            <h4 class="huge" style="font-weight: bold;">@String.Format("{0:dd/MM/yy}", localDateTime)</h4>
+                            <p><span  style="font-weight: bold;">MAX temp:</span> @weath.temp.max</p>
+                            <p><span  style="font-weight: bold;">MIN temp:</span> @weath.temp.min</p>
+                            <p><span  style="font-weight: bold;">Humdidity:</span> @weath.humidity</p>
+                            <p><span  style="font-weight: bold;">Pressure:</span> @weath.pressure</p>
                         </div>
                     </div>
                 </div>

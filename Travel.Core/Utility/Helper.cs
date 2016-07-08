@@ -15,7 +15,7 @@ namespace Travel.Core
         {
             string appId = "bd83daab4507534bde7f44804b5e365e";
             WeatherInformation weatherInfo = new WeatherInformation();
-            string url = string.Format("http://api.openweathermap.org/data/2.5/forecast/weekly?q={0}&units=metric&cnt=7&APPID={1}", location, appId);
+            string url = string.Format("http://api.openweathermap.org/data/2.5/forecast/daily?q={0}&units=metric&cnt=7&APPID={1}", location, appId);
             using (WebClient client = new WebClient())
             {
                 string json = client.DownloadString(url);
