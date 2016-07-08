@@ -162,13 +162,14 @@
     <Compile Include="Controllers\ItineraryController.cs" />
     <Compile Include="Controllers\JourneyController.cs" />
     <Compile Include="Controllers\MapController.cs" />
-    <Compile Include="Controllers\NotificationController.cs" />
+    <Compile Include="Controllers\NotificationsController.cs" />
     <Compile Include="Controllers\WeatherController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\JourneyModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\NotificationViewModel.cs" />
     <Compile Include="ViewModels\ActivityViewModel.cs" />
     <Compile Include="ViewModels\BookingViewModel.cs" />
     <Compile Include="ViewModels\CarHireViewModel.cs" />
@@ -239,7 +240,7 @@
     <Content Include="Views\Itinerary\Index.cshtml" />
     <Content Include="Views\Map\Index.cshtml" />
     <Content Include="Views\CarHire\Index.cshtml" />
-    <Content Include="Views\Notification\Index.cshtml" />
+    <Content Include="Views\Notifications\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

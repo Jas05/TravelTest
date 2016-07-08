@@ -9,5 +9,6 @@ namespace Travel.Web.ViewModels
     {
         public string DestinationId { get; set; }
         public string BookingRef { get; set; }
+        public string BookingId { get; set; }
     }
 }
