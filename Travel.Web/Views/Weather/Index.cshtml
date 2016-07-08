@@ -37,7 +37,7 @@
                             <img src="http://openweathermap.org/img/w/@(weath.weather.FirstOrDefault().icon).png" alt="">
                         </div>
                         <div class="col-xs-9 text-right">
-                            <h4 class="huge" style="font-weight: bold;">@weath.dt_txt</h4>
+                            <h4 class="huge" style="font-weight: bold;">@String.Format("{0:MM/dd/yy}", Convert.ToDateTime(weath.dt_txt))</h4>
                             <p><span  style="font-weight: bold;">MAX temp:</span> @weath.main.temp_max</p>
                             <p><span  style="font-weight: bold;">MIN temp:</span> @weath.main.temp_min</p>
                             <p><span  style="font-weight: bold;">Humdidity:</span> @weath.main.humidity</p>
