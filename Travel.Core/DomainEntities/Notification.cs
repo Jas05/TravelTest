@@ -19,5 +19,6 @@ namespace Travel.Core.DomainEntities
         public string NotificationType { get; set; }
         public string NotificationText { get; set; }
         public string NotificationDate { get; set; }
+        public string Icon { get; set; }
     }
 }
