@@ -5,13 +5,14 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Weather Information for @Model.WeatherInformation.city</h2>
+<h2>Weather Information for @Model.WeatherInformation.city.name</h2>
+<hr />
 <div class="row">
     @foreach (var weath in Model.WeatherInformation.list)
     {
-        <div class="col-sm-4 col-lg-4 col-md-4">
+        @*<div class="col-sm-4 col-lg-4 col-md-4">
             <div class="thumbnail">
-                <img src="@weath.weather.FirstOrDefault().icon" alt="">
+                <img src="http://openweathermap.org/img/w/@(weath.weather.FirstOrDefault().icon).png" alt="">
                 <div class="caption">
                     <h4 class="pull-right">@weath.weather.FirstOrDefault().description</h4>
                 </div>
@@ -24,6 +25,25 @@
                     <p class="pull-right">@weath.main.humidity</p>
                     <p class="pull-right">@weath.main.pressure</p>
                     <p class="pull-right">@weath.main.grnd_level</p>
+                </div>
+            </div>
+        </div>*@
+
+        <div class="col-lg-3 col-md-3">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <img src="http://openweathermap.org/img/w/@(weath.weather.FirstOrDefault().icon).png" alt="">
+                        </div>
+                        <div class="col-xs-9 text-right">
+                            <h4 class="huge" style="font-weight: bold;">@weath.dt_txt</h4>
+                            <p><span  style="font-weight: bold;">MAX temp:</span> @weath.main.temp_max</p>
+                            <p><span  style="font-weight: bold;">MIN temp:</span> @weath.main.temp_min</p>
+                            <p><span  style="font-weight: bold;">Humdidity:</span> @weath.main.humidity</p>
+                            <p><span  style="font-weight: bold;">Pressure:</span> @weath.main.pressure</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
