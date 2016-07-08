@@ -25,22 +25,22 @@ textarea {
     max-width: 280px;
 }
 
-footer{
+footer {
     border-top: 1px solid #eeeeee;
     width: 100%;
 }
 
 
-.login h2{
+.login h2 {
     margin-bottom: 30px;
 }
 
-.login footer{
+.login footer {
     position: fixed;
     bottom: 0;
 }
 
-.hero-feature{
+.hero-feature {
     margin-bottom: 10px;
 }
 /*.login label{
@@ -52,7 +52,19 @@ footer{
    background: #04025E url('img/loginbg.jpg') no-repeat left top;
 
 }*/
-body.activities .thumbnail{
+body.activities .thumbnail {
     min-height: 330px;
     margin-bottom: 10px;
+}
+
+@media (min-width: 767px) {
+    .thumbnail img {
+        width:50% !important;
+    }
+}
+
+@media (min-width: 768){
+    .thumbnail img {
+        width:100% !important;
+    }
 }
