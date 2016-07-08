@@ -17,7 +17,7 @@ namespace Travel.Web.Controllers
             var datamanager = new DataManager();
             var activityViewModel = new ActivityViewModel();
 
-            activityViewModel.Activities = Helper.GetActivites("alcudia", "2016-08-08", "2016-08-14").Activities.OrderBy(x => x.title).ToList();
+            activityViewModel.Activities = Helper.GetActivites("alcudia", "2016-08-08", "2016-08-14").Activities.OrderBy(x => x.fromPrice).ToList();
             return View(activityViewModel);
         }
     }

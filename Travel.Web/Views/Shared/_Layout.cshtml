@@ -38,12 +38,15 @@
                 </button>
                     -->
                 
-                @if(Request.Url.LocalPath != "/" && Request.Url.LocalPath.Contains("/Details") == false)
+                @if (Request.Url.LocalPath != "/" && Request.Url.LocalPath.Contains("/BookActivity") == false && Request.Url.LocalPath.Contains("/Details") == false)
                 {  
                     <h1>@Html.ActionLink("Pocket Rep", "Index", "Details", new { area = "" }, new { @class = "navbar-brand" })</h1>
                 }
-                else
-                { 
+                else if (Request.Url.LocalPath.Contains("/BookActivity") == true)
+                {
+                    <h1>@Html.ActionLink("Pocket Rep", "Index", "Activity", new { area = "" }, new { @class = "navbar-brand" })</h1>
+                }
+                else { 
                     <h1>@Html.ActionLink("Pocket Rep", "Index", "Booking", new { area = "" }, new { @class = "navbar-brand" })</h1>
                 }
 

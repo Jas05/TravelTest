@@ -6,7 +6,26 @@
 }
 
 <h2>Activities</h2>
+<div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        Activity Type
+        <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+        <li><a href="#">Adventure</a></li>
+        <li><a href="#">Attractions</a></li>
+        <li><a href="#">Tours & Sightseeing</a></li>
+        <li><a href="#">Food & Drink</a></li>
+        <li><a href="#">Theme Parks</a></li>
+        <li><a href="#">Water Activities</a></li>
+        <li><a href="#">Private Transfers</a></li>
+        <li><a href="#">Family</a></li>
+    </ul>
+</div>
+<br/>
+
 <div class="row">
+
 @foreach (var activity in Model.Activities)
 {
     <div class="col-sm-4 col-lg-4 col-md-4">
@@ -18,7 +37,7 @@
                     <a href="#">@activity.title</a>
                 </h4>
                 <p>@activity.supplierName</p>
-                <p>[@string.Join(",",activity.categories)]</p>
+                <p style="color:darkblue;">@string.Join(",",activity.categories)</p>
             </div>
             <div class="ratings" style="display:inline-block;width:100%">
                 <p class="pull-right">@(activity.recommendationScore == "0" ? "" : activity.recommendationScore) </p>
