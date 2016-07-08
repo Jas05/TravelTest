@@ -9,27 +9,68 @@
 <hr />
 <div class="row">
 
-        <div class="col-lg-3 col-md-3">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <div class="row">
-                        <div class="col-xs-9 text-right">
-                            <p><span style="font-weight: bold;">title:</span> @Model.title</p>
-                        <p><span style="font-weight: bold;">supplierName:</span> @Model.supplierName</p>
-                            <p><span style="font-weight: bold;">duration:</span> @Model.duration</p>
-                            <p><span style="font-weight: bold;">discountType:</span> @Model.discountType</p>
-                            <p><span style="font-weight: bold;">discountPercentage:</span> @Model.discountPercentage</p>
-                            <p><span style="font-weight: bold;">categories:</span> @string.Join(",",Model.categories)</p>
-                            <p><span style="font-weight: bold;">freeCancellation:</span> @Model.freeCancellation</p>
-                            <p><span style="font-weight: bold;">fromOriginalPrice:</span> @Model.fromOriginalPrice</p>
-                            <p><span style="font-weight: bold;">Discounted Price:</span> @Model.fromPrice</p>
+    <div>
+        <div>
+            <div class="panel-heading">
+                <div class="row">
 
-
+                    <div class="col-xs-12" style="max-height:300px">
+                        <img src="@Model.largeImageURL"  alt="">
                         </div>
+                   
+                    <div class="col-xs-12 panel panel-default" style="margin-top:10px">
+
+                        <p><span style="font-weight: bold;">Title:</span> @Model.supplierName</p>
+
+                        <p><span style="font-weight: bold;">Description:</span> @Model.title</p>
+                        <div class="col-xs-9 text-right">
+
+
+
+                            <p><span style="font-weight: bold;">duration:</span> @Model.duration</p>
+
+                            <p><span style="font-weight: bold;">fromPrice:</span> @Model.fromPrice</p>
+
+                            <div>
+                                <p>
+                                    <span style="font-weight: bold;">Adults:</span> @Model.fromPrice
+                                    <select>
+                                        <option id="1" value="1">1</option>
+                                        <option id="2" value="2">2</option>
+                                        <option id="3" value="3">3</option>
+                                        <option id="4" value="4">4</option>
+                                        <option id="5" value="5">5</option>
+                                    </select>
+                                </p>
+                            </div>
+
+                            <div>
+                                <p>
+                                    <span style="font-weight: bold;">Childrens:</span> @Model.fromPrice
+                                    <select>
+                                        <option id="1" value="1">1</option>
+                                        <option id="2" value="2">2</option>
+                                        <option id="3" value="3">3</option>
+                                        <option id="4" value="4">4</option>
+                                        <option id="5" value="5">5</option>
+                                    </select>
+                                </p>
+                            </div>
+
+                            <div>
+                                Activity Total: $28
+                            </div>
+                            <div>
+                                <span>Confirm payment using stored card XXXX XXXX XXXX 1234</span>
+                                <span class="btn btn-primary">Book Now</span>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
 
 </div>

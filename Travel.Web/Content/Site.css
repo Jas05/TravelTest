@@ -30,8 +30,17 @@ footer {
     width: 100%;
 }
 
+body.login {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #94AEBF url('img/loginbg.jpg') no-repeat center center scroll;
+}
+
 
 .login h2 {
+    margin-top: 40px;
     margin-bottom: 30px;
 }
 
@@ -67,4 +76,10 @@ body.activities .thumbnail {
     .thumbnail img {
         width:100% !important;
     }
+}
+
+.text-vertical-center{
+        display: table-cell;
+    text-align: center;
+    vertical-align: middle;
 }
