@@ -37,7 +37,7 @@
             <!-- /.panel-heading -->
             <div class="panel-body">
                 <div class="list-group">
-                    @foreach (var notification in Model.Notifications)
+                    @foreach (var notification in Model.InResort)
                     {
                         <a href="#" class="list-group-item">
                             <i class="fa fa-comment fa-fw"></i> @Html.Raw(notification.NotificationText)
