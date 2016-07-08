@@ -2,22 +2,22 @@
   "Flights": [
     {
       "ID": "1",
-      "InboundDepartureFlightDate": "24/02/2017",
+      "InboundDepartureFlightDate": "09/08/2016",
       "InboundDepartureFlightTime": "14:15",
-      "InboundArrivalFlightDate": "24/02/2017",
+      "InboundArrivalFlightDate": "09/08/2016",
       "InboundArrivalFlightTime": "17:15",
       "InboundFlightDuration": "3h",
       "InboundFlightOperator": "Ryanair",
-      "InboundFlightCode": "CX12SD",
-      "OutboundDepartureFlightDate": "28/02/2017",
+      "InboundFlightCode": "FR123",
+      "OutboundDepartureFlightDate": "16/08/2016",
       "OutboundDepartureFlightTime": "19:35",
-      "OutboundArrivalFlightDate": "28/02/2017",
+      "OutboundArrivalFlightDate": "16/08/2016",
       "OutboundArrivalFlightTime": "22:05",
       "OutboundFlightDuration": "2.5h",
       "OutboundFlightOperator": "Ryanair",
-      "OutboundFlightCode": "CX56SD",
+      "OutboundFlightCode": "FR124",
       "FlightFrom": "Gatwick Airport",
-      "FlightTo": "Madrid Airport"
+      "FlightTo": "Majorca Airport"
     },
     {
       "ID": "2",
