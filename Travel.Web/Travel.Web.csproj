@@ -180,9 +180,10 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\gsdk.css" />
     <Content Include="Content\img\arrival.png" />
-    <Content Include="Content\img\bus.png" />
+    <Content Include="Content\img\bus1.png" />
     <Content Include="Content\img\car.png" />
     <Content Include="Content\img\create_thumb.png" />
+    <Content Include="Content\img\create_thumb2.png" />
     <Content Include="Content\img\departure.png" />
     <Content Include="Content\img\hotel.png" />
     <Content Include="Content\img\loginbg.jpg" />
