@@ -39,7 +39,7 @@
                 
                 @if(Request.Url.LocalPath != "/" && Request.Url.LocalPath.Contains("/Details") == false)
                 {  
-                    <h1>@Html.ActionLink("< Pocket Rep", "Index", "Details", new { area = "" }, new { @class = "navbar-brand" })</h1>
+                    <h1>@Html.ActionLink("Pocket Rep", "Index", "Details", new { area = "" }, new { @class = "navbar-brand" })</h1>
                 }
                 else
                 { 
