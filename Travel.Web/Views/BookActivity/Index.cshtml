@@ -1,0 +1,35 @@
+﻿@model Travel.Core.DomainEntities.Activity2
+
+@{
+    ViewBag.Title = "Activity Booking";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Activity Booking</h2>
+<hr />
+<div class="row">
+
+        <div class="col-lg-3 col-md-3">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-xs-9 text-right">
+                            <p><span style="font-weight: bold;">title:</span> @Model.title</p>
+                        <p><span style="font-weight: bold;">supplierName:</span> @Model.supplierName</p>
+                            <p><span style="font-weight: bold;">duration:</span> @Model.duration</p>
+                            <p><span style="font-weight: bold;">discountType:</span> @Model.discountType</p>
+                            <p><span style="font-weight: bold;">discountPercentage:</span> @Model.discountPercentage</p>
+                            <p><span style="font-weight: bold;">categories:</span> @string.Join(",",Model.categories)</p>
+                            <p><span style="font-weight: bold;">freeCancellation:</span> @Model.freeCancellation</p>
+                            <p><span style="font-weight: bold;">fromOriginalPrice:</span> @Model.fromOriginalPrice</p>
+                            <p><span style="font-weight: bold;">Discounted Price:</span> @Model.fromPrice</p>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+</div>
