@@ -1,0 +1,22 @@
+﻿@model Travel.Web.ViewModels.NotificationViewModel
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <h2>Booking</h2>
+
+    @foreach (var notification in Model.Notifications)
+    {
+        <div>@notification.NotificationDate - @notification.NotificationText</div>
+    }
+
+    <h2>In Resort</h2>
+    @foreach (var offer in Model.Offers)
+    {
+        <div>@offer.NotificationDate - @offer.NotificationText</div>
+    }
+</div>
+

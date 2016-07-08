@@ -18,6 +18,7 @@ namespace Travel.Web.Controllers
             var viewModel = new DetailsViewModel();
             viewModel.BookingRef = data.BookingRef;
             viewModel.DestinationId = data.DestinationId.ToString();
+            viewModel.BookingId = data.ID;
                 
             return View(viewModel);
         }

@@ -18,5 +18,6 @@ namespace Travel.Core.DomainEntities
         public string ResortID { get; set; }
         public string NotificationType { get; set; }
         public string NotificationText { get; set; }
+        public string NotificationDate { get; set; }
     }
 }

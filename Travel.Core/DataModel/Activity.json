@@ -8,10 +8,10 @@
       "PriceGBP": "£ 44.99",
       "BookingURL": "www.google.com",
       "ActivityType": "Sport"
-    },
-    {
       "ID": "2",
       "DestinationID": "1",
+    },
+    {
       "Name": "Museum Trip",
       "Description": "Museum Trip 2 for 1 offers",
       "Price GBP": "£ 14.29",
