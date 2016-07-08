@@ -4,39 +4,64 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Contact Us</h2>
-
+<div class="row" style="margin-top: 20px;">
+    <div class="col-xs-12">
+        <h2>Contact Us</h2>
+    </div>
+</div>
 <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
     <div class="row">
-        <h4><label for="name">Before travel</label></h4>
+        <div class="col-xs-12">
+            <label for="name">Before travel</label>
+        </div>
     </div>
     <div class="row">
-        <label for="name">Booking ref:</label><br />
-        <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+        <div class="col-xs-12">
+            <label for="name">Booking ref:</label><br />
+            <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+        </div>
     </div>
     <div class="row">
-        <label for="email">Subject:</label><br />
-        <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+        <div class="col-xs-12">
+            <label for="email">Subject:</label><br />
+            <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+        </div>
     </div>
     <div class="row">
-        <label for="message">Description:</label><br />
-        <textarea id="message" class="input" name="message" rows="7" cols="32"></textarea><br />
+        <div class="col-xs-12">
+            <label for="message">Description:</label><br />
+            <textarea id="message" class="input" name="message" rows="7" cols="32"></textarea><br />
+        </div>
     </div>
     <div class="row">
-        <label for="message">Email Address:</label><br />
-        <input id="message" class="input" name="message" size="30"/><br /><br />
+        <div class="col-xs-12">
+            <label for="message">Email Address:</label><br />
+            <input id="message" class="input" name="message" size="30" /><br /><br />
+        </div>
     </div>
     <div class="row">
-        <input id="submit_button" type="submit" value="Submit" /><br/><br />
+        <div class="col-xs-12">
+            <input id="submit_button" type="submit" value="Submit" /><br /><br />
+        </div>
     </div>
     <div class="row">
-        <h4><label for="name">In Resort</label></h4>
+        <div class="col-xs-12">
+            <h4><label for="name">In Resort</label></h4>
+        </div>
     </div>
     <div class="row">
-        <label for="phone">Phone: 02033848453</label><br />
+        <div class="col-xs-12">
+            <label for="phone">Phone: 02033848453</label><br />
+        </div>
     </div>
     <div class="row">
-        <label for="message">Live Chat:</label><br />
+        <div class="col-xs-12">
+            <label for="message">Live Chat:</label><br />
+        </div>
     </div>
-
+    <div class="row">
+        <div class="col-xs-12">
+            <img src="~/Content/img/Live chat_1.jpg" />
+        </div>
+    </div>
 </form>
