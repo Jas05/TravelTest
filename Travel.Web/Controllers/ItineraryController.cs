@@ -11,8 +11,9 @@ namespace Travel.Web.Controllers
     public class ItineraryController : Controller
     {
         // GET: Itinerary
-        public ActionResult Index(string bookingRef)
+        public ActionResult Index()
         {
+            var bookingRef = HttpContext.Session["BookingRef"] != null ? HttpContext.Session["BookingRef"].ToString() : "123456";
             var viewModel = new ItineraryViewModel();
             var datamanager = new DataManager();
             var bookingDetails = datamanager.GetBookingDetails(bookingRef);
