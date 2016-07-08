@@ -8,18 +8,18 @@
 <div class="row" style="margin-top: 20px;">
     <div class="col-xs-12 col-md-12">
         <div class="panel panel-default">
-            <div class="panel-heading">Booking </div>
+            <div class="panel-heading"><span class="glyphicon glyphicon-calendar"></span> Booking </div>
             <!-- /.panel-heading -->
             <div class="panel-body">
                 <div class="list-group">
                     @foreach (var notification in Model.Notifications)
                     {
-                        <a href="#" class="list-group-item">
-                            <i class="fa fa-comment fa-fw"></i> @Html.Raw(notification.NotificationText)
+                        <div class="list-group-item">
+                            <i class="fa fa-comment fa-fw"></i><span class="glyphicon @notification.Icon"></span> @Html.Raw(notification.NotificationText)
                             <span class="pull-right text-muted small">
                                 <em>@notification.NotificationDate</em>
                             </span>
-                        </a>
+                        </div>
                     }
 
                 </div>
@@ -33,18 +33,18 @@
 <div class="row">
     <div class="col-xs-12 col-md-12">
         <div class="panel panel-default">
-            <div class="panel-heading">In Resort</div>
+            <div class="panel-heading"><span class="glyphicon glyphicon-home"></span> In Resort</div>
             <!-- /.panel-heading -->
             <div class="panel-body">
                 <div class="list-group">
                     @foreach (var notification in Model.InResort)
                     {
-                        <a href="#" class="list-group-item">
-                            <i class="fa fa-comment fa-fw"></i> @Html.Raw(notification.NotificationText)
+                        <div class="list-group-item">
+                            <i class="fa fa-comment fa-fw"></i><span class="glyphicon @notification.Icon"></span> @Html.Raw(notification.NotificationText)
                             <span class="pull-right text-muted small">
                                 <em>@notification.NotificationDate</em>
                             </span>
-                        </a>
+                        </div>
                     }
 
                 </div>
