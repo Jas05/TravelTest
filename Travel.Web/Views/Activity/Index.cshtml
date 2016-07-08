@@ -29,7 +29,7 @@
                     <span class="glyphicon glyphicon-star"></span>
                 </p>
                 <p>
-                    <a href="#" class="pull-right btn btn-primary" onclick="@Url.Action("Index", "BookActivity", Html.Raw(Json.Encode(activity)))" >Book</a>
+                    <a class="pull-right btn btn-primary" href="@Url.Action("Index", "BookActivity", new {@title=activity.title, @largeImageURL=activity.largeImageURL, @fromPrice = activity.fromPrice,@fromOriginalPrice = activity.fromOriginalPrice, @duration = activity.duration, @supplierName = activity.supplierName, @discountType=activity.discountType  }))" >Select</a>
                 </p>
             </div>
         </div>
