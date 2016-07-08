@@ -2,9 +2,9 @@
   "Flights": [
     {
       "ID": "1",
-      "InboundDepartureFlightDate": "09/08/2016",
+      "InboundDepartureFlightDate": "24/08/2016",
       "InboundDepartureFlightTime": "14:15",
-      "InboundArrivalFlightDate": "09/08/2016",
+      "InboundArrivalFlightDate": "24/08/2016",
       "InboundArrivalFlightTime": "17:15",
       "InboundFlightDuration": "3h",
       "InboundFlightOperator": "Ryanair",

@@ -7,7 +7,7 @@
 	  "ResortID" : "12",
 	  "NotificationText" : "Francesco, 8 weeks to go! Check your passport, visa, and travel insurance!",
 	  "NotificationType" : "Booking",
-	  "NotificationDate" : "22/02/2016 12:53:12",
+	  "NotificationDate" : "22/05/2016 12:53:12",
 	   "Icon" : "glyphicon-info-sign"
     },
 	{
@@ -16,7 +16,7 @@
 	  "ResortID": "",
 	  "NotificationText" : "Francesco, 4 weeks to go! Click here for the best currency exchange rates.",
 	  "NotificationType" : "Booking",
-	   "NotificationDate" : "21/03/2016 16:53:12",
+	   "NotificationDate" : "02/07/2016 16:53:12",
 	    "Icon" : "glyphicon-info-sign"
     },
 	{
@@ -25,7 +25,7 @@
 	  "ResortID": "",
 	  "NotificationText" : "Only 2 weeks to go! Time to buy your holiday essentials, dont forget your toothbrush!",
 	  "NotificationType" : "Booking",
-	   "NotificationDate" : "06/04/2016 10:32:12",
+	   "NotificationDate" : "01/08/2016 10:32:12",
 	    "Icon" : "glyphicon-info-sign"
     },
 	{
@@ -34,7 +34,7 @@
 	  "ResortID": "",
 	  "NotificationText" : "3 sleeps until holiday! We look forward to seeing you, Francesco!",
 	  "NotificationType" : "Booking",
-	  "NotificationDate" : "17/04/2016 13:12:23",
+	  "NotificationDate" : "12/08/2016 13:12:23",
 	  "Icon" : "glyphicon-info-sign"
     },
     {
@@ -43,7 +43,7 @@
 	  "ResortID": "",
 	  "NotificationText" : "1 day to go to your trip. Check-in completed.",
 	  "NotificationType" : "Booking",
-	  "NotificationDate" : "19/04/2016 16:57:12",
+	  "NotificationDate" : "15/08/2016 16:57:12",
 	   "Icon" : "glyphicon glyphicon-ok-circle"
     },
      {
@@ -52,7 +52,7 @@
 	  "ResortID": "",
 	  "NotificationText" : "Departure day! Dont forget your passport!",
 	  "NotificationType" : "Booking",
-	  "NotificationDate" : "20/04/2016 06:16:12",
+	  "NotificationDate" : "16/08/2016 06:16:12",
 	   "Icon" : "glyphicon-flag"
     },
 	 {
@@ -61,7 +61,7 @@
 	  "ResortID": "",
 	  "NotificationText" : "Flight update: Unfortunately delayed 30 minutes.",
 	  "NotificationType" : "Booking",
-	  "NotificationDate" : "20/04/2016 08:54:12",
+	  "NotificationDate" : "16/08/2016 08:54:12",
 	   "Icon" : "glyphicon-time"
     },
 	 {
@@ -70,7 +70,7 @@
 	  "ResortID": "",
 	  "NotificationText" : "Welcome to Majorca, Francesco!",
 	  "NotificationType" : "Booking",
-	  "NotificationDate" : "20/04/2016 11:54:31",
+	  "NotificationDate" : "16/08/2016 11:54:31",
 	  "Icon" : "glyphicon-thumbs-up"
     }
 	,
@@ -80,7 +80,7 @@
 	  "ResortID": "",
 	  "NotificationText" : "20% discount for lowcostholidays customers at De Marchis Restaurant in harbour, valid this week only!",
 	  "NotificationType" : "InResort",
-	  "NotificationDate" : "20/04/2016 11:54:26",
+	  "NotificationDate" : "16/08/2016 11:54:26",
 	   "Icon" : "glyphicon-certificate"
     },
 	 {
@@ -89,7 +89,7 @@
 	  "ResortID": "",
 	  "NotificationText" : "New art gallery opening - 'Spectrum House' on Beehive Road, Friday 8th July 7pm!",
 	  "NotificationType" : "InResort",
-	  "NotificationDate" : "20/04/2016 13:12:11",
+	  "NotificationDate" : "16/08/2016 13:12:11",
 	  "Icon" : "glyphicon-eye-open"
     },
 	 {
@@ -98,7 +98,7 @@
 	  "ResortID": "",
 	  "NotificationText" : "Spanish baggage handler strike planned for Monday 11th July, click <a href='http://www.express.co.uk/news/uk/601335/Spain-Holiday-Baggage-Handler-Strikes-easyJet-Vuelling-Menzies-Aviation-Iberica-Britain'>here</a> for details",
 	  "NotificationType" : "InResort",
-	  "NotificationDate" : "21/04/2016 08:24:21",
+	  "NotificationDate" : "21/08/2016 08:24:21",
 	  "Icon" : "glyphicon-bell"
     },
 	 {
@@ -107,7 +107,7 @@
 	  "ResortID": "",
 	  "NotificationText" : "Local musician Paul Matthews playing at The Greyhound pub on main street, 9pm ",
 	  "NotificationType" : "InResort",
-	  "NotificationDate" : "22/04/2016 07:42:08",
+	  "NotificationDate" : "22/08/2016 07:42:08",
 	  "Icon" : "glyphicon-eye-open"
     },
 	 {
@@ -116,7 +116,7 @@
 	  "ResortID": "",
 	  "NotificationText" : "Waterpark offering free entry for children this weekend, click <a href='https://www.seemallorca.com/waterparks/'>here</a> for details",
 	  "NotificationType" : "InResort",
-	  "NotificationDate" : "23/04/2016 09:12:06",
+	  "NotificationDate" : "23/08/2016 09:12:06",
 	  "Icon" : "glyphicon-certificate"
     }
 
