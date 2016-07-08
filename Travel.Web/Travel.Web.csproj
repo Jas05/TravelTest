@@ -154,6 +154,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\UnityMvcActivator.cs" />
     <Compile Include="Controllers\ActivityController.cs" />
+    <Compile Include="Controllers\BookActivityController.cs" />
     <Compile Include="Controllers\BookingController.cs" />
     <Compile Include="Controllers\CarHireController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
@@ -243,6 +244,7 @@
     <Content Include="Views\Map\Index.cshtml" />
     <Content Include="Views\CarHire\Index.cshtml" />
     <Content Include="Views\Notifications\Index.cshtml" />
+    <Content Include="Views\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
