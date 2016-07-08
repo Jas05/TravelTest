@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Travel.Core.DAL;
+using Travel.Web.ViewModels;
 
 namespace Travel.Web.Controllers
 {
@@ -13,9 +14,12 @@ namespace Travel.Web.Controllers
         public ActionResult Index(string bookingRef)
         {
             var datamanager = new DataManager();
-            datamanager.GetBookingDetails(bookingRef);
-
-            return View();
+            var data = datamanager.GetBookingDetails(bookingRef);
+            var viewModel = new DetailsViewModel();
+            viewModel.BookingRef = data.BookingRef;
+            viewModel.DestinationId = data.DestinationId.ToString();
+                
+            return View(viewModel);
         }
     }
 }

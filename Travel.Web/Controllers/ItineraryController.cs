@@ -30,6 +30,7 @@ namespace Travel.Web.Controllers
             viewModel.InboundDuration = flights.InboundFlightDuration;
             viewModel.BoardBasis = bookingDetails.BoardBasis;
             viewModel.HotelName = resorts.ResortName;
+            viewModel.HotelDuration = bookingDetails.Duration;
             return View(viewModel);
         }
     }
