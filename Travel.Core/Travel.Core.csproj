@@ -73,6 +73,7 @@
   <ItemGroup>
     <Compile Include="DAL\DataManager.cs" />
     <Compile Include="DomainEntities\Activity.cs" />
+    <Compile Include="DomainEntities\CarHire.cs" />
     <Compile Include="DomainEntities\Notification.cs" />
     <Compile Include="DomainEntities\Booking.cs" />
     <Compile Include="DomainEntities\Destination.cs" />

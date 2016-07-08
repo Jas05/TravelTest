@@ -3,12 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using Travel.Core.DomainEntities;
-using Travel.Web.Models;
 
 namespace Travel.Web.ViewModels
 {
-    public class ActivityViewModel
+    public class CarHireViewModel
     {
-        public List<Activity2> Activities { get; set; }
+        public CarHire CarHire { get; set; }
     }
 }

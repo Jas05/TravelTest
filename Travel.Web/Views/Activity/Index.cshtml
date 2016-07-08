@@ -11,16 +11,16 @@
 {
     <div class="col-sm-4 col-lg-4 col-md-4">
         <div class="thumbnail">
-            <img src="http://placehold.it/320x150" alt="">
+            <img src="@activity.imageUrl" alt="">
             <div class="caption">
-                <h4 class="pull-right">@activity.PriceGBP</h4>
+                <h4 class="pull-right">@activity.fromPrice</h4>
                 <h4>
-                    <a href="#">@activity.Name</a>
+                    <a href="#">@activity.supplierName</a>
                 </h4>
-                <p>@activity.Description</p>
+                <p>@activity.title</p>
             </div>
             <div class="ratings">
-                <p class="pull-right">15 reviews</p>
+                <p class="pull-right">@activity.recommendationScore</p>
                 <p>
                     <span class="glyphicon glyphicon-star"></span>
                     <span class="glyphicon glyphicon-star"></span>

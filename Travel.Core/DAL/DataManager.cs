@@ -22,17 +22,19 @@ namespace Travel.Core.DAL
             return bookinglist.Bookings.FirstOrDefault(x => x.BookingRef == bookingRef);
         }
 
-        public List<Activity> GetActivities(string destinationID)
+        //public List<Activity> GetActivities(string destinationID)
+        //{
+
+        //    var activitiesList = DeserializeJson<ActivityList>(Path.Combine(executableLocation + @"bin\DataModel\Activity.json"));
+        //    return activitiesList.Activities.Where(x => x.DestinationID == destinationID).ToList();
+        //}
+
+        public List<Activity2> GetAllActivities()
         {
 
-            var activitiesList = DeserializeJson<ActivityList>(Path.Combine(executableLocation + @"bin\DataModel\Activity.json"));
-            return activitiesList.Activities.Where(x => x.DestinationID == destinationID).ToList();
-        }
+            //var activitiesList = DeserializeJson<ActivityList>(Path.Combine(executableLocation + @"bin\DataModel\Activity.json"));
+            var activitiesList = Helper.GetActivites("alcudia", "2016-08-08", "2016-08-14");
 
-        public List<Activity> GetAllActivities()
-        {
-
-            var activitiesList = DeserializeJson<ActivityList>(Path.Combine(executableLocation + @"bin\DataModel\Activity.json"));
             return activitiesList.Activities.ToList();
         }
 

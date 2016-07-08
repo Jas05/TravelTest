@@ -1,0 +1,40 @@
+﻿@model Travel.Web.ViewModels.CarHireViewModel
+
+@{
+    ViewBag.Title = "Car Hire";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Car Hire</h2>
+<div class="row">
+    @foreach (var car in Model.CarHire.CarInfoList.CarInfo)
+    {
+        <div class="col-sm-4 col-lg-4 col-md-4">
+            <div class="gallery-images-wrap">
+                <img src="@car.ThumbnailUrl" alt="">
+                <div class="caption">
+                    <h4 class="pull-right">@car.Price.DailyRate.Currency@car.Price.DailyRate.Value</h4>
+                    <p>@car.CarMakeModel </p>
+                    <p>@car.CarClass  </p>
+                    <p>@car.SupplierName   </p>
+                </div>
+                <h4>
+                    
+                </h4>
+                <button id="BookCarHire" onclick="location.href = '@car.DetailsUrl';" class="btn btn-default">Book Car Hire</button>
+                <div class="ratings">
+                    <p class="pull-right">@car.CarClass</p>
+                    <p>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    }
+
+
+</div>

@@ -25,5 +25,34 @@ namespace Travel.Core
             return weatherInfo;
         }
 
+        public static ActivityList GetActivites(string location, string startDate, string endDate)
+        {
+            string appId = "i4CjuKj4UwpiMla4r0Z1r648IaYjIoii";
+            ActivityList activityList = new ActivityList();
+            string url = string.Format("http://terminal2.expedia.com/x/activities/search?location={0}&startDate={1}&endDate={2}&apikey={3}", location, startDate, endDate, appId);
+            using (WebClient client = new WebClient())
+            {
+                string json = client.DownloadString(url);
+                activityList = (new JavaScriptSerializer()).Deserialize<ActivityList>(json);
+            }
+
+            return activityList;
+        }
+
+        public static CarHire GetCarHire(string pickuplocation, string dropofflocation, string dropoffdate, string pickupdate)
+        {
+            string appId = "i4CjuKj4UwpiMla4r0Z1r648IaYjIoii";
+            CarHire activityList = new CarHire();
+        
+            string url = string.Format("http://terminal2.expedia.com:80/x/cars/search?pickupdate=2016-08-15T10%3A00&dropoffdate=2016-08-17T16%3A30&pickuplocation=SFO&dropofflocation=SFO&limit=10&apikey={0}", appId);
+            using (WebClient client = new WebClient())
+            {
+                string json = client.DownloadString(url);
+                activityList = (new JavaScriptSerializer()).Deserialize<CarHire>(json);
+            }
+
+            return activityList;
+        }
+
     }
 }

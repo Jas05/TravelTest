@@ -9,16 +9,16 @@ using Travel.Web.ViewModels;
 
 namespace Travel.Web.Controllers
 {
-    public class ActivityController : Controller
+    public class CarHireController : Controller
     {
-        // GET: Activities
+        // GET: CarHire
         public ActionResult Index()
         {
             var datamanager = new DataManager();
-            var activityViewModel = new ActivityViewModel();
+            var carHireViewModel = new CarHireViewModel();
 
-            activityViewModel.Activities = Helper.GetActivites("alcudia", "2016-08-08", "2016-08-14").Activities;
-            return View(activityViewModel);
+            carHireViewModel.CarHire = Helper.GetCarHire("alcudia", "2016-08-08", "2016-08-14", "");
+            return View(carHireViewModel);
         }
     }
 }
