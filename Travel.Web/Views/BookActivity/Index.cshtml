@@ -81,12 +81,12 @@
         <img src="@Model.largeImageURL" alt="" class="img-responsive">
     </div>
     <div class="col-md-5">
-        <p><span style="font-weight: bold;">Title:</span> @Model.supplierName</p>
+        <p><span style="font-weight: bold;">Supplier:</span> @Model.supplierName.TrimEnd(')')</p>
 
         <p><span style="font-weight: bold;">Description:</span> @Model.title</p>
-        <p><span style="font-weight: bold;">duration:</span> @Model.duration</p>
+        <p><span style="font-weight: bold;">Duration:</span> @Model.duration</p>
 
-        <p><span style="font-weight: bold;">fromPrice:</span> @Model.fromPrice</p>
+        <p><span style="font-weight: bold;">From Price:</span> @Model.fromPrice</p>
         <p>
             <span style="font-weight: bold;">Adults:</span> @Model.fromPrice
             <select>
@@ -98,7 +98,7 @@
             </select>
         </p>
         <p>
-            <span style="font-weight: bold;">Childrens:</span> @Model.fromPrice
+            <span style="font-weight: bold;">Children:</span> @Model.fromPrice
             <select>
                 <option id="1" value="1">1</option>
                 <option id="2" value="2">2</option>
@@ -108,7 +108,7 @@
             </select>
         </p>
         <div>
-            <span style="font-weight: bold;"> Activity Total:</span><span> $28</span>
+            <span style="font-weight: bold;">Activity Total:</span><span> $28</span>
 </div>
         <p>
             <span>Confirm payment using stored card XXXX XXXX XXXX 1234</span>
