@@ -13,7 +13,7 @@ namespace Travel.Web.Controllers
         // GET: Details
         public ActionResult Index()
         {
-            var bookingRef = HttpContext.Session["BookingRef"] == null ? HttpContext.Session["BookingRef"].ToString() : "123456";
+            var bookingRef = HttpContext.Session["BookingRef"] != null ? HttpContext.Session["BookingRef"].ToString() : "123456";
             var datamanager = new DataManager();
             var data = datamanager.GetBookingDetails(bookingRef);
             var viewModel = new DetailsViewModel();
