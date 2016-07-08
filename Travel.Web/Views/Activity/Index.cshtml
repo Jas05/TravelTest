@@ -20,9 +20,9 @@
                 <p>@activity.supplierName</p>
                 <p>[@string.Join(",",activity.categories)]</p>
             </div>
-            <div class="ratings">
+            <div class="ratings" style="display:inline-block;width:100%">
                 <p class="pull-right">@(activity.recommendationScore == "0" ? "" : activity.recommendationScore) </p>
-                <p>
+                <p class="pull-left">
                     <span class="glyphicon glyphicon-star"></span>
                     <span class="glyphicon glyphicon-star"></span>
                     <span class="glyphicon glyphicon-star"></span>
