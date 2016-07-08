@@ -63,10 +63,10 @@ namespace Travel.Core.DAL
             return notificationList.Notifications.Where(x=>x.NotificationType == "Booking").ToList();
         }
 
-        public List<Notification> GetOffers(string bookingId)
+        public List<Notification> GetInResort(string bookingId)
         {
             var notificationList = DeserializeJson<NotificationList>(Path.Combine(executableLocation + @"bin\DataModel\Notification.json"));
-            return notificationList.Notifications.Where(x=>x.NotificationType == "Offer").ToList();
+            return notificationList.Notifications.Where(x=>x.NotificationType == "InResort").ToList();
         }
 
         private static T DeserializeJson<T>(string jsonfile)

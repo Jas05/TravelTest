@@ -16,7 +16,7 @@ namespace Travel.Web.Controllers
             var datamanager = new DataManager();
             var notificationsViewModel = new NotificationViewModel();
             notificationsViewModel.Notifications = datamanager.GetNotification(bookingId);
-            notificationsViewModel.Offers = datamanager.GetOffers(bookingId);
+            notificationsViewModel.InResort = datamanager.GetInResort(bookingId);
 
 
 

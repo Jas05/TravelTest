@@ -71,7 +71,7 @@
 	  "BookingID": "1",
 	  "ResortID": "",
 	  "NotificationText" : "20% discount for lowcostholidays customers at De Marchis Restaurant in harbour, valid this week only!",
-	  "NotificationType" : "Offer",
+	  "NotificationType" : "InResort",
 	  "NotificationDate" : "18/04/2016 11:54:26"
     },
 	 {
@@ -79,15 +79,15 @@
 	  "BookingID": "1",
 	  "ResortID": "",
 	  "NotificationText" : "New art gallery opening - 'Spectrum House' on Beehive Road, Friday 8th July 7pm!",
-	  "NotificationType" : "Offer",
+	  "NotificationType" : "InResort",
 	  "NotificationDate" : "20/04/2016 11:54:24"
     },
 	 {
       "ID": "12",
 	  "BookingID": "1",
 	  "ResortID": "",
-	  "NotificationText" : "Spanish baggage handler strike planned for Monday 11th July, click here for details",
-	  "NotificationType" : "Offer",
+	  "NotificationText" : "Spanish baggage handler strike planned for Monday 11th July, click <a href='http://www.express.co.uk/news/uk/601335/Spain-Holiday-Baggage-Handler-Strikes-easyJet-Vuelling-Menzies-Aviation-Iberica-Britain'>here</a> for details",
+	  "NotificationType" : "InResort",
 	  "NotificationDate" : "21/04/2016 08:24:21"
     },
 	 {
@@ -95,15 +95,15 @@
 	  "BookingID": "1",
 	  "ResortID": "",
 	  "NotificationText" : "Local musician Paul Matthews playing at The Greyhound pub on main street, 9pm ",
-	  "NotificationType" : "Offer",
+	  "NotificationType" : "InResort",
 	  "NotificationDate" : "22/04/2016 07:42:08"
     },
 	 {
       "ID": "14",
 	  "BookingID": "1",
 	  "ResortID": "",
-	  "NotificationText" : "Waterpark offering free entry for children this weekend, click here for details",
-	  "NotificationType" : "Offer",
+	  "NotificationText" : "Waterpark offering free entry for children this weekend, click <a href='https://www.seemallorca.com/waterparks/'>here</a> for details",
+	  "NotificationType" : "InResort",
 	  "NotificationDate" : "23/04/2016 09:12:06"
     }
 

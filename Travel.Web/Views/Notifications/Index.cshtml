@@ -10,13 +10,13 @@
 
     @foreach (var notification in Model.Notifications)
     {
-        <div>@notification.NotificationDate - @notification.NotificationText</div>
+        <div>@notification.NotificationDate - @Html.Raw(@notification.NotificationText)</div>
     }
 
     <h2>In Resort</h2>
-    @foreach (var offer in Model.Offers)
+    @foreach (var inResort in Model.InResort)
     {
-        <div>@offer.NotificationDate - @offer.NotificationText</div>
+        <div>@inResort.NotificationDate - @Html.Raw(inResort.NotificationText)</div>
     }
 </div>
 

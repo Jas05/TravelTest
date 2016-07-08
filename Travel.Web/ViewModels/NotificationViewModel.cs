@@ -10,6 +10,6 @@ namespace Travel.Web.ViewModels
     public class NotificationViewModel
     {
         public List<Notification> Notifications { get; set; }
-        public List<Notification> Offers { get; set; }
+        public List<Notification> InResort { get; set; }
     }
 }
