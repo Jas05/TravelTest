@@ -15,7 +15,7 @@
                     @foreach (var notification in Model.Notifications)
                     {
                         <a href="#" class="list-group-item">
-                            <i class="fa fa-comment fa-fw"></i> @notification.NotificationText
+                            <i class="fa fa-comment fa-fw"></i> @Html.Raw(notification.NotificationText)
                             <span class="pull-right text-muted small">
                                 <em>@notification.NotificationDate</em>
                             </span>
@@ -24,7 +24,7 @@
 
                 </div>
                 <!-- /.list-group -->
-                <a href="#" class="btn btn-default btn-block">View All Alerts</a>
+                <a href="#" class="btn btn-default btn-block">View All</a>
             </div>
             <!-- /.panel-body -->
         </div>
@@ -37,19 +37,19 @@
             <!-- /.panel-heading -->
             <div class="panel-body">
                 <div class="list-group">
-                    @foreach (var offer in Model.Offers)
+                    @foreach (var notification in Model.Notifications)
                     {
                         <a href="#" class="list-group-item">
-                            <i class="fa fa-comment fa-fw"></i> @offer.NotificationText
+                            <i class="fa fa-comment fa-fw"></i> @Html.Raw(notification.NotificationText)
                             <span class="pull-right text-muted small">
-                                <em>@offer.NotificationDate</em>
+                                <em>@notification.NotificationDate</em>
                             </span>
                         </a>
                     }
 
                 </div>
                 <!-- /.list-group -->
-                <a href="#" class="btn btn-default btn-block">View All Offers</a>
+                <a href="#" class="btn btn-default btn-block">View All</a>
             </div>
             <!-- /.panel-body -->
         </div>
