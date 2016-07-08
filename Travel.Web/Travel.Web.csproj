@@ -162,32 +162,38 @@
     <Compile Include="Controllers\ItineraryController.cs" />
     <Compile Include="Controllers\JourneyController.cs" />
     <Compile Include="Controllers\MapController.cs" />
-    <Compile Include="Controllers\NotificationController.cs" />
+    <Compile Include="Controllers\NotificationsController.cs" />
     <Compile Include="Controllers\WeatherController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\JourneyModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\NotificationViewModel.cs" />
     <Compile Include="ViewModels\ActivityViewModel.cs" />
     <Compile Include="ViewModels\BookingViewModel.cs" />
     <Compile Include="ViewModels\CarHireViewModel.cs" />
     <Compile Include="ViewModels\DetailsViewModel.cs" />
     <Compile Include="ViewModels\ItineraryViewModel.cs" />
     <Compile Include="ViewModels\JourneyViewModel.cs" />
+    <Compile Include="ViewModels\WeatherViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\gsdk.css" />
     <Content Include="Content\img\arrival.png" />
+    <Content Include="Content\img\bus.png" />
     <Content Include="Content\img\bus1.png" />
     <Content Include="Content\img\car.png" />
     <Content Include="Content\img\departure.png" />
     <Content Include="Content\img\hotel.png" />
     <Content Include="Content\img\hotel2.png" />
     <Content Include="Content\img\image_541_v1.jpg" />
+    <Content Include="Content\img\landingflight.png" />
     <Content Include="Content\img\loginbg.jpg" />
+    <Content Include="Content\img\takeoffflight.png" />
+    <Content Include="Content\timeline.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -235,7 +241,7 @@
     <Content Include="Views\Itinerary\Index.cshtml" />
     <Content Include="Views\Map\Index.cshtml" />
     <Content Include="Views\CarHire\Index.cshtml" />
-    <Content Include="Views\Notification\Index.cshtml" />
+    <Content Include="Views\Notifications\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

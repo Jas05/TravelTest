@@ -1,32 +1,111 @@
 ﻿{
-  "Notification": [
+
+  "Notifications": [
     {
-      "ID": "1",
-	  "BookingID: "",
-	  "ResortID: "",
-	  "NotificationText" : "",
-	  "NotificationType" : "Booking"
+      "ID" : "1",
+	  "BookingID" : "1",
+	  "ResortID" : "12",
+	  "NotificationText" : "Francesco, 8 weeks to go! Check your passport, visa, and travel insurance!",
+	  "NotificationType" : "Booking",
+	  "NotificationDate" : "22/02/2016 12:53:12"
+    },
+	{
+      "ID" : "2",
+	  "BookingID": "1",
+	  "ResortID": "",
+	  "NotificationText" : "Francesco, 4 weeks to go! Click here for the best currency exchange rates.",
+	  "NotificationType" : "Booking",
+	   "NotificationDate" : "21/03/2016 16:53:12"
+    },
+	{
+      "ID" : "3",
+	  "BookingID": "1",
+	  "ResortID": "",
+	  "NotificationText" : "Only 2 weeks to go! Time to buy your holiday essentials, dont forget your toothbrush!",
+	  "NotificationType" : "Booking",
+	   "NotificationDate" : "06/04/2016 10:32:12"
+    },
+	{
+      "ID" : "4",
+	  "BookingID": "1",
+	  "ResortID": "",
+	  "NotificationText" : "3 sleeps until holiday! We look forward to seeing you, Francesco!",
+	  "NotificationType" : "Booking",
+	   "NotificationDate" : "17/04/2016 13:12:23"
     },
     {
-      "ID": "2",
-	  "BookingID: "",
-	  "ResortID: "",
-	  "NotificationText" : "",
-	  "NotificationType" : "Resort"
-    },
-    {
-      "ID": "3",
-	  "BookingID: "",
-	  "ResortID: "",
-	  "NotificationText" : "",
-	  "NotificationType" : "Booking"
+      "ID": "6",
+	  "BookingID": "1",
+	  "ResortID": "",
+	  "NotificationText" : "1 day to go to your trip. Don't forget to bring a suncream as weather is looking great.",
+	  "NotificationType" : "Booking",
+	  "NotificationDate" : "19/04/2016 16:57:12"
     },
      {
-      "ID": "4",
-	  "BookingID: "",
-	  "ResortID: "",
-	  "NotificationText" : "",
-	  "NotificationType" : "Resort"
+      "ID": "7",
+	  "BookingID": "1",
+	  "ResortID": "",
+	  "NotificationText" : "Departure day! Dont forget your passport!",
+	  "NotificationType" : "Booking",
+	  "NotificationDate" : "20/04/2016 06:16:12"
+    },
+	 {
+      "ID": "8",
+	  "BookingID": "1",
+	  "ResortID": "",
+	  "NotificationText" : "Flight update: Unfortunately delayed 30 minutes.",
+	  "NotificationType" : "Booking",
+	  "NotificationDate" : "20/04/2016 08:54:12"
+    },
+	 {
+      "ID": "9",
+	  "BookingID": "1",
+	  "ResortID": "",
+	  "NotificationText" : "Welcome to Majorca, Francesco!",
+	  "NotificationType" : "Booking",
+	  "NotificationDate" : "20/04/2016 11:54:31"
     }
+	,
+	 {
+      "ID": "10",
+	  "BookingID": "1",
+	  "ResortID": "",
+	  "NotificationText" : "20% discount for lowcostholidays customers at De Marchis Restaurant in harbour, valid this week only!",
+	  "NotificationType" : "Offer",
+	  "NotificationDate" : "18/04/2016 11:54:26"
+    },
+	 {
+      "ID": "11",
+	  "BookingID": "1",
+	  "ResortID": "",
+	  "NotificationText" : "New art gallery opening - 'Spectrum House' on Beehive Road, Friday 8th July 7pm!",
+	  "NotificationType" : "Offer",
+	  "NotificationDate" : "20/04/2016 11:54:24"
+    },
+	 {
+      "ID": "12",
+	  "BookingID": "1",
+	  "ResortID": "",
+	  "NotificationText" : "Spanish baggage handler strike planned for Monday 11th July, click here for details",
+	  "NotificationType" : "Offer",
+	  "NotificationDate" : "21/04/2016 08:24:21"
+    },
+	 {
+      "ID": "13",
+	  "BookingID": "1",
+	  "ResortID": "",
+	  "NotificationText" : "Local musician Paul Matthews playing at The Greyhound pub on main street, 9pm ",
+	  "NotificationType" : "Offer",
+	  "NotificationDate" : "22/04/2016 07:42:08"
+    },
+	 {
+      "ID": "14",
+	  "BookingID": "1",
+	  "ResortID": "",
+	  "NotificationText" : "Waterpark offering free entry for children this weekend, click here for details",
+	  "NotificationType" : "Offer",
+	  "NotificationDate" : "23/04/2016 09:12:06"
+    }
+
   ]
 }

@@ -57,6 +57,17 @@ namespace Travel.Core.DAL
             return destinationList.Resorts.FirstOrDefault(x => x.ID == resortId);
         }
 
+        public List<Notification> GetNotification(string bookingId)
+        {
+            var notificationList = DeserializeJson<NotificationList>(Path.Combine(executableLocation + @"bin\DataModel\Notification.json"));
+            return notificationList.Notifications.Where(x=>x.NotificationType == "Booking").ToList();
+        }
+
+        public List<Notification> GetOffers(string bookingId)
+        {
+            var notificationList = DeserializeJson<NotificationList>(Path.Combine(executableLocation + @"bin\DataModel\Notification.json"));
+            return notificationList.Notifications.Where(x=>x.NotificationType == "Offer").ToList();
+        }
 
         private static T DeserializeJson<T>(string jsonfile)
         {

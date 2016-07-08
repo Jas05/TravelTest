@@ -19,7 +19,7 @@ namespace Travel.Core
             using (WebClient client = new WebClient())
             {
                 string json = client.DownloadString(url);
-                weatherInfo = (new JavaScriptSerializer()).Deserialize<WeatherInformation>(json);
+               weatherInfo = (new JavaScriptSerializer()).Deserialize<WeatherInformation>(json);
             }
 
             return weatherInfo;

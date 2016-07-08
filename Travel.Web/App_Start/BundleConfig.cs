@@ -25,6 +25,7 @@ namespace Travel.Web
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
+                      "~/Content/timeline.css",
                       "~/Content/site.css"));
         }
     }

@@ -91,7 +91,9 @@
     <None Include="DataModel\Activity.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="DataModel\Notification.json" />
+    <None Include="DataModel\Notification.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="DataModel\Booking.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -101,7 +103,9 @@
     <None Include="DataModel\Flight.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="DataModel\Offer.json" />
+    <None Include="DataModel\Offer.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="DataModel\UserFeed.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
