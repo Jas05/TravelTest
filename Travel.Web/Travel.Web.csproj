@@ -185,6 +185,7 @@
     <Content Include="Content\img\car.png" />
     <Content Include="Content\img\departure.png" />
     <Content Include="Content\img\hotel.png" />
+    <Content Include="Content\img\hotel2.png" />
     <Content Include="Content\img\image_541_v1.jpg" />
     <Content Include="Content\img\loginbg.jpg" />
     <Content Include="favicon.ico" />
