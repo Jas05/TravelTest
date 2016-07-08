@@ -15,12 +15,13 @@
             <div class="caption">
                 <h4 class="pull-right">@activity.fromPrice</h4>
                 <h4>
-                    <a href="#">@activity.supplierName</a>
+                    <a href="#">@activity.title</a>
                 </h4>
-                <p>@activity.title</p>
+                <p>@activity.supplierName</p>
+                <p>[@string.Join(",",activity.categories)]</p>
             </div>
             <div class="ratings">
-                <p class="pull-right">@activity.recommendationScore</p>
+                <p class="pull-right">@(activity.recommendationScore == "0" ? "" : activity.recommendationScore) </p>
                 <p>
                     <span class="glyphicon glyphicon-star"></span>
                     <span class="glyphicon glyphicon-star"></span>
