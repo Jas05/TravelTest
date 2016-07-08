@@ -83,3 +83,9 @@ body.activities .thumbnail {
     text-align: center;
     vertical-align: middle;
 }
+
+.navbar-brand{
+        font-size: 1em;
+    font-weight: 700;
+    color: #333;
+}
