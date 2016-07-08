@@ -8,7 +8,7 @@ using Travel.Web.ViewModels;
 
 namespace Travel.Web.Controllers
 {
-    public class NotificationsController : Controller
+    public class AlertsController : Controller
     {
         // GET: Notification
         public ActionResult Index(string bookingId)
