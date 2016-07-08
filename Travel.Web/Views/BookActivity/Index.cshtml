@@ -7,7 +7,7 @@
 
 <h2>Activity Booking</h2>
 <hr />
-<div class="row">
+@*<div class="row">
 
     <div>
         <div>
@@ -73,4 +73,49 @@
     </div>
 
 
+</div>*@
+
+
+<div class="row">
+    <div class="col-md-7">
+        <img src="@Model.largeImageURL" alt="" class="img-responsive">
+    </div>
+    <div class="col-md-5">
+        <p><span style="font-weight: bold;">Title:</span> @Model.supplierName</p>
+
+        <p><span style="font-weight: bold;">Description:</span> @Model.title</p>
+        <p><span style="font-weight: bold;">duration:</span> @Model.duration</p>
+
+        <p><span style="font-weight: bold;">fromPrice:</span> @Model.fromPrice</p>
+        <p>
+            <span style="font-weight: bold;">Adults:</span> @Model.fromPrice
+            <select>
+                <option id="1" value="1">1</option>
+                <option id="2" value="2">2</option>
+                <option id="3" value="3">3</option>
+                <option id="4" value="4">4</option>
+                <option id="5" value="5">5</option>
+            </select>
+        </p>
+        <p>
+            <span style="font-weight: bold;">Childrens:</span> @Model.fromPrice
+            <select>
+                <option id="1" value="1">1</option>
+                <option id="2" value="2">2</option>
+                <option id="3" value="3">3</option>
+                <option id="4" value="4">4</option>
+                <option id="5" value="5">5</option>
+            </select>
+        </p>
+        <div>
+            <span style="font-weight: bold;"> Activity Total:</span><span> $28</span>
+</div>
+        <p>
+            <span>Confirm payment using stored card XXXX XXXX XXXX 1234</span>
+        </p>
+       <p>
+           <a class="btn btn-primary" href="#">Book Now</a>
+       </p>
+        
+    </div>
 </div>

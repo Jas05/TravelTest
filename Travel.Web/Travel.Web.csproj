@@ -192,7 +192,7 @@
     <Content Include="Content\img\hotel2.png" />
     <Content Include="Content\img\image_541_v1.jpg" />
     <Content Include="Content\img\landingflight.png" />
-    <Content Include="Content\img\log in image.jpg" />
+    <Content Include="Content\img\loginImage.jpg" />
     <Content Include="Content\img\loginbg.jpg" />
     <Content Include="Content\img\takeoffflight.png" />
     <Content Include="Content\timeline.css" />
