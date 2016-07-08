@@ -154,6 +154,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\UnityMvcActivator.cs" />
     <Compile Include="Controllers\ActivityController.cs" />
+    <Compile Include="Controllers\BookActivityController.cs" />
     <Compile Include="Controllers\BookingController.cs" />
     <Compile Include="Controllers\CarHireController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
@@ -191,6 +192,7 @@
     <Content Include="Content\img\hotel2.png" />
     <Content Include="Content\img\image_541_v1.jpg" />
     <Content Include="Content\img\landingflight.png" />
+    <Content Include="Content\img\Live chat_1.jpg" />
     <Content Include="Content\img\loginbg.jpg" />
     <Content Include="Content\img\takeoffflight.png" />
     <Content Include="Content\timeline.css" />
@@ -242,6 +244,7 @@
     <Content Include="Views\Map\Index.cshtml" />
     <Content Include="Views\CarHire\Index.cshtml" />
     <Content Include="Views\Notifications\Index.cshtml" />
+    <Content Include="Views\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

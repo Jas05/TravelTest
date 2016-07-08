@@ -29,7 +29,7 @@
                     <span class="glyphicon glyphicon-star"></span>
                 </p>
                 <p>
-                    <a href="#" class="pull-right btn btn-primary">Select</a>
+                    <a href="#" class="pull-right btn btn-primary" onclick="@Url.Action("Index", "BookActivity", Html.Raw(Json.Encode(activity)))" >Book</a>
                 </p>
             </div>
         </div>
