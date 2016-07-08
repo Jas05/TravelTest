@@ -1,7 +1,33 @@
-﻿
+﻿@model Travel.Web.ViewModels.WeatherViewModel
+
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Weather Information";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Index</h2>
+<h2>Weather Information for @Model.WeatherInformation.city</h2>
+<div class="row">
+    @foreach (var weath in Model.WeatherInformation.list)
+    {
+        <div class="col-sm-4 col-lg-4 col-md-4">
+            <div class="thumbnail">
+                <img src="@weath.weather.FirstOrDefault().icon" alt="">
+                <div class="caption">
+                    <h4 class="pull-right">@weath.weather.FirstOrDefault().description</h4>
+                </div>
+                <div class="caption">
+                    <h4 class="pull-right">@weath.dt_txt</h4>
+                </div>
+                <div>
+                    <p class="pull-right">@weath.main.temp_max</p>
+                    <p class="pull-right">@weath.main.temp_min</p>
+                    <p class="pull-right">@weath.main.humidity</p>
+                    <p class="pull-right">@weath.main.pressure</p>
+                    <p class="pull-right">@weath.main.grnd_level</p>
+                </div>
+            </div>
+        </div>
+    }
 
+
+</div>

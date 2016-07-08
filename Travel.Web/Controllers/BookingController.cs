@@ -24,10 +24,7 @@ namespace Travel.Web.Controllers
             {
                 if (model.BookingRef == "123456" && model.LastName == "spectrum")
                 {
-
-                    Helper.GetWeatherInfo("London");
                     return RedirectToAction("Index", "Details",new { @bookingRef = model.BookingRef });
-                   
                 }
                 return View("View");
             }

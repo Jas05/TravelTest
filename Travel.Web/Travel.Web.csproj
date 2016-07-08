@@ -175,6 +175,7 @@
     <Compile Include="ViewModels\DetailsViewModel.cs" />
     <Compile Include="ViewModels\ItineraryViewModel.cs" />
     <Compile Include="ViewModels\JourneyViewModel.cs" />
+    <Compile Include="ViewModels\WeatherViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
