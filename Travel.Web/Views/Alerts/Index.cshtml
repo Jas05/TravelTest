@@ -16,8 +16,8 @@
                 <div class="list-group">
                     @foreach (var notification in Model.Notifications)
                     {
-                        <div class="list-group-item">
-                            <i class="fa fa-comment fa-fw"></i><span class="glyphicon @notification.Icon"></span> @Html.Raw(notification.NotificationText)
+                        <div class="list-group-item" style="min-height:55px;font-size:1.0em;">
+                            <i class="fa fa-comment fa-fw"></i><span class="glyphicon @notification.Icon"></span>  @Html.Raw(notification.NotificationText)
                             <span class="pull-right text-muted small">
                                 <em>@notification.NotificationDate</em>
                             </span>
@@ -41,8 +41,8 @@
                 <div class="list-group">
                     @foreach (var notification in Model.InResort)
                     {
-                        <div class="list-group-item">
-                            <i class="fa fa-comment fa-fw"></i><span class="glyphicon @notification.Icon"></span> @Html.Raw(notification.NotificationText)
+                        <div class="list-group-item" style="min-height:55px;font-size:1.0em;">
+                            <i class="fa fa-comment fa-fw"></i><span class="glyphicon @notification.Icon"></span>  @Html.Raw(notification.NotificationText)
                             <span class="pull-right text-muted small">
                                 <em>@notification.NotificationDate</em>
                             </span>
