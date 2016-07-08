@@ -5,13 +5,13 @@
     </script>
 
     <script>
-var myCenter=new google.maps.LatLng(51.508742,-0.120850);
+        var myCenter = new google.maps.LatLng(39.833105, 3.117652);
 
 function initialize()
 {
 var mapProp = {
   center:myCenter,
-  zoom:15,
+  zoom:9,
   mapTypeId:google.maps.MapTypeId.ROADMAP
   };
 
@@ -24,7 +24,7 @@ var marker=new google.maps.Marker({
 marker.setMap(map);
 
 var infowindow = new google.maps.InfoWindow({
-  content:"Hello World!"
+    content: "Carretera d'Artà, 43,07400 Alcúdia, Illes Balears, Spain"
   });
 
 infowindow.open(map,marker);

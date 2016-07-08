@@ -44,7 +44,7 @@ namespace Travel.Core
             string appId = "i4CjuKj4UwpiMla4r0Z1r648IaYjIoii";
             CarHire activityList = new CarHire();
         
-            string url = string.Format("http://terminal2.expedia.com:80/x/cars/search?pickupdate=2016-08-15T10%3A00&dropoffdate=2016-08-17T16%3A30&pickuplocation=SFO&dropofflocation=SFO&limit=10&apikey={0}", appId);
+            string url = string.Format("http://terminal2.expedia.com:80/x/cars/search?pickupdate=2016-08-15T10%3A00&dropoffdate=2016-08-17T16%3A30&pickuplocation=PMI&dropofflocation=PMI&limit=10&apikey={0}", appId);
             using (WebClient client = new WebClient())
             {
                 string json = client.DownloadString(url);
